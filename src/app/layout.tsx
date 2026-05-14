@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import GlobalSearchBar from "@/components/layout/GlobalSearchBar";
+import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 
 // Fuente principal y única: Inter
@@ -104,6 +105,9 @@ export default function RootLayout({
             <div className="flex-1 flex flex-col w-full max-w-7xl mx-auto p-6 sm:p-8 lg:p-12 text-base sm:text-lg">
               {children}
             </div>
+
+            {/* PIE DE PÁGINA (Footer) */}
+            <Footer />
           </main>
         </div>
       </body>
