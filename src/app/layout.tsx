@@ -63,18 +63,17 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <head>
-        {/* 🛡️ BLOQUE LEGAL: CMP (Consent Management Platform) 
-            Pega aquí el script de tu banner de cookies certificado por la IAB (Cookiebot, Quantcast, etc.)
-            Requerido para cumplir con RGPD y mostrar anuncios de AdSense en Europa.
+        {/* 
+            Google AdSense (Carga clásica)
+            Usamos tag <script> estándar en lugar de next/script para evitar 
+            el error 'data-nscript' que bloquea la validación de Google.
         */}
-        
-        {/* Google AdSense */}
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5726101688695268"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
+
         {/* Google Analytics 4 (GA4) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -88,6 +87,8 @@ export default function RootLayout({
             gtag('config', 'G-XXXXXXXXXX');
           `}
         </Script>
+
+        {/* 🛡️ BLOQUE LEGAL: CMP (Consent Management Platform) */}
       </head>
       <body className="min-h-screen bg-[#f8fafc] text-[#111827] flex flex-col selection:bg-[#2563EB] selection:text-white">
         <div className="flex min-h-screen flex-col">
