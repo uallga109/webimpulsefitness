@@ -97,7 +97,7 @@ export default function DietasPage() {
           {/* Dieta 1: Volumen Limpio */}
           <article className="group bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
             <div className="h-48 bg-orange-50 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative">
-              <span className="text-5xl">🍚</span>
+              <img src="/images/dietas/volumen-limpio.png" alt="Volumen Limpio" className="w-full h-full object-cover opacity-80" />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-green-600 shadow-sm">🟢 Ganancia Muscular</span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-blue-600 shadow-sm">🔵 Hipertrofia</span>
@@ -120,7 +120,7 @@ export default function DietasPage() {
           {/* Dieta 2: Definición */}
           <article className="group bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
             <div className="h-48 bg-red-50 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative">
-              <span className="text-5xl">🥗</span>
+              <img src="/images/dietas/definicion.png" alt="Dieta de Definición" className="w-full h-full object-cover opacity-80" />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-red-600 shadow-sm">🔴 Pérdida de Grasa</span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-blue-600 shadow-sm">🔵 Estética</span>
@@ -143,7 +143,7 @@ export default function DietasPage() {
           {/* Dieta 3: Keto */}
           <article className="group bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
             <div className="h-48 bg-yellow-50 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative">
-              <span className="text-5xl">🥑</span>
+              <img src="/images/dietas/keto.png" alt="Dieta Keto" className="w-full h-full object-cover opacity-80" />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-red-600 shadow-sm">🔴 Pérdida de Grasa</span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-yellow-600 shadow-sm">🟡 Rendimiento</span>
@@ -166,7 +166,7 @@ export default function DietasPage() {
           {/* Dieta 4: Mediterránea */}
           <article className="group bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
             <div className="h-48 bg-green-50 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative">
-              <span className="text-5xl">🫒</span>
+              <img src="/images/dietas/mediterranea.png" alt="Dieta Mediterránea" className="w-full h-full object-cover opacity-80" />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-green-600 shadow-sm">🟢 Salud</span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-blue-600 shadow-sm">🔵 Mantenimiento</span>
@@ -189,7 +189,7 @@ export default function DietasPage() {
           {/* Dieta 5: Ayuno */}
           <article className="group bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
             <div className="h-48 bg-purple-50 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 relative">
-              <span className="text-5xl">⏱️</span>
+              <img src="/images/dietas/ayuno.png" alt="Ayuno Intermitente" className="w-full h-full object-cover opacity-80" />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-red-600 shadow-sm">🔴 Pérdida de Grasa</span>
                 <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/90 text-yellow-600 shadow-sm">🟡 Estilo de Vida</span>

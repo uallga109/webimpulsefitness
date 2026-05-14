@@ -32,7 +32,7 @@ export default function EventosPage() {
         {[
           {
             title: "Arnold Sports Festival Europe",
-            date: "Octubre 2026",
+            date: "11-13 Octubre 2024",
             location: "Madrid",
             tag: "Feria & Multideporte",
             tagClass: "bg-blue-50 text-[#2563EB]",
@@ -40,7 +40,7 @@ export default function EventosPage() {
           },
           {
             title: "Campeonato de España AEP",
-            date: "Noviembre 2026",
+            date: "Noviembre 2024",
             location: "Valencia",
             tag: "Powerlifting Oficial",
             tagClass: "bg-purple-50 text-purple-600",
@@ -48,7 +48,7 @@ export default function EventosPage() {
           },
           {
             title: "WNBF Spain Nationals",
-            date: "Septiembre 2026",
+            date: "19 Octubre 2024",
             location: "Barcelona",
             tag: "Culturismo Natural",
             tagClass: "bg-green-50 text-[#22C55E]",
@@ -56,7 +56,7 @@ export default function EventosPage() {
           },
           {
             title: "Madrid CrossFit Championship",
-            date: "Diciembre 2026",
+            date: "Septiembre 2024",
             location: "Madrid",
             tag: "CrossFit Licensed",
             tagClass: "bg-amber-50 text-amber-600",
@@ -64,7 +64,7 @@ export default function EventosPage() {
           },
           {
             title: "FIBO Global Fitness",
-            date: "Abril 2027",
+            date: "10-13 Abril 2025",
             location: "Colonia (Alemania)",
             tag: "Feria Internacional",
             tagClass: "bg-gray-50 text-[#111827]",
@@ -72,7 +72,7 @@ export default function EventosPage() {
           },
           {
             title: "Hyrox Spain Tour",
-            date: "Marzo 2027",
+            date: "12 Abril 2025",
             location: "Málaga",
             tag: "Fitness Racing",
             tagClass: "bg-red-50 text-red-600",

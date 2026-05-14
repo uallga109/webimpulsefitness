@@ -15,6 +15,7 @@ interface Exercise {
   icon: string;
   color: string;
   href: string;
+  image?: string;
 }
 
 const exercises: Exercise[] = [
@@ -27,7 +28,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "⛓️",
     color: "bg-blue-50 text-[#2563EB]",
-    href: "/rutinas/casa/trx"
+    href: "/rutinas/casa/trx",
+    image: "/images/ejercicios/trx.png"
   },
   {
     id: 2,
@@ -38,7 +40,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios", "Cardio"],
     icon: "💣",
     color: "bg-orange-50 text-orange-600",
-    href: "/rutinas/casa/kettlebells"
+    href: "/rutinas/casa/kettlebells",
+    image: "/images/ejercicios/kettlebells.png"
   },
   {
     id: 3,
@@ -219,27 +222,41 @@ export default function EjerciciosCasaClient() {
           <Link
             key={ex.id}
             href={ex.href}
-            className="group bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between text-left"
+            className="group bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col text-left"
           >
-            <div>
-              <div className={`w-14 h-14 rounded-2xl ${ex.color.split(' ')[0]} flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:rotate-12 transition-transform`}>
-                {ex.icon}
+            {ex.image ? (
+              <div className="h-48 overflow-hidden relative">
+                <img src={ex.image} alt={ex.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" />
+                <div className="absolute top-4 left-4">
+                  <div className={`w-10 h-10 rounded-xl ${ex.color.split(' ')[0]} flex items-center justify-center text-xl shadow-md`}>
+                    {ex.icon}
+                  </div>
+                </div>
               </div>
-              <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider ${ex.color}`}>
+            ) : (
+              <div className="p-8 pb-0">
+                <div className={`w-14 h-14 rounded-2xl ${ex.color.split(' ')[0]} flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:rotate-12 transition-transform`}>
+                  {ex.icon}
+                </div>
+              </div>
+            )}
+            
+            <div className="p-8 pt-6 flex flex-col flex-1">
+              <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider self-start ${ex.color}`}>
                 {ex.subtitle}
               </span>
               <h3 className="text-xl font-black text-[#111827] mt-4 mb-3 leading-tight group-hover:text-[#2563EB] transition-colors">
                 {ex.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-1">
                 {ex.desc}
               </p>
-            </div>
-            
-            <div className="pt-6 border-t border-gray-50 mt-auto">
-              <div className="flex items-center space-x-2 text-xs font-bold text-gray-400">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
-                <span>{ex.tag}</span>
+              
+              <div className="pt-6 border-t border-gray-50 mt-auto">
+                <div className="flex items-center space-x-2 text-xs font-bold text-gray-400">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+                  <span>{ex.tag}</span>
+                </div>
               </div>
             </div>
           </Link>
