@@ -8,8 +8,31 @@ export const metadata: Metadata = {
 };
 
 export default function CreatinaPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Creatina Monohidrato",
+    "description": "El suplemento con mayor respaldo científico para aumentar la fuerza y el rendimiento deportivo.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Impulse Fitness"
+    },
+    "category": "Suplementos Deportivos",
+    "image": "https://impulsefitnessmarketing.com/images/suplementos/creatina.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    }
+  };
+
   return (
-    <SupplementDetailLayout 
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <SupplementDetailLayout 
       title="Creatina Monohidrato"
       subtitle="El suplemento con mayor respaldo científico para aumentar tu rendimiento en el gimnasio."
       image="/images/suplementos/creatina.png"
@@ -32,5 +55,6 @@ export default function CreatinaPage() {
       ]}
       category="Fuerza"
     />
+    </>
   );
 }

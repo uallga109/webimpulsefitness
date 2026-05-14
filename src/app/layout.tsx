@@ -13,18 +13,42 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Impulse Fitness Marketing | Modern Wellness Platform",
+  title: {
+    template: "%s | Impulse Fitness",
+    default: "Impulse Fitness | El mayor buscador fitness y nutrición",
+  },
   description:
-    "Plataforma limpia y confiable para encontrar gimnasios, entrenadores personales, rutinas basadas en evidencia y herramientas de cálculo nutricional.",
+    "Plataforma líder en fitness: encuentra gimnasios, rutinas de entrenamiento, dietas personalizadas y suplementación basada en evidencia científica.",
   keywords: [
     "fitness",
-    "wellness",
     "gimnasios",
-    "entrenadores",
-    "rutinas",
-    "salud",
+    "rutinas casa",
+    "suplementos deportivos",
+    "calculadora calorías",
+    "nutrición",
     "impulse fitness",
   ],
+  authors: [{ name: "Impulse Fitness Team" }],
+  openGraph: {
+    title: "Impulse Fitness | Modern Wellness Platform",
+    description: "Tu guía definitiva para el entrenamiento y la salud.",
+    url: "https://impulsefitnessmarketing.com",
+    siteName: "Impulse Fitness",
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Impulse Fitness",
+    description: "El mayor buscador fitness del mercado.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: "9vG_QauSG6Wxi4GedqoV7ctobOxUonOOdaUDzfnj4GY",
+  },
 };
 
 export default function RootLayout({
@@ -35,13 +59,31 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <head>
+        {/* 🛡️ BLOQUE LEGAL: CMP (Consent Management Platform) 
+            Pega aquí el script de tu banner de cookies certificado por la IAB (Cookiebot, Quantcast, etc.)
+            Requerido para cumplir con RGPD y mostrar anuncios de AdSense en Europa.
+        */}
+        
         {/* Google AdSense */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" // REEMPLAZAR CON TU ID
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        {/* Google Analytics 4 (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
       </head>
       <body className="min-h-screen bg-[#f8fafc] text-[#111827] flex flex-col selection:bg-[#2563EB] selection:text-white">
         <div className="flex min-h-screen flex-col">
