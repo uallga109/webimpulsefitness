@@ -22,14 +22,23 @@ export default function CalculadoraCaloriasPage() {
           <span className="text-gray-900 font-medium">Calculadora de Calorías</span>
         </nav>
 
-        <header className="border-b border-gray-200 pb-6">
-          <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
-            Calculadora de Calorías (TDEE)
-          </h1>
-          <p className="mt-2 text-base sm:text-lg text-gray-600 max-w-2xl">
-            Conoce tus necesidades energéticas exactas para respaldar tus metas
-            de entrenamiento de forma completamente estructurada.
-          </p>
+        <header className="border-b border-gray-200 pb-8 flex flex-col md:flex-row gap-8 items-start md:items-center">
+          <div className="flex-1">
+            <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
+              Calculadora de Calorías (TDEE)
+            </h1>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl">
+              Conoce tus necesidades energéticas exactas para respaldar tus metas
+              de entrenamiento de forma completamente estructurada.
+            </p>
+          </div>
+          <div className="w-full md:w-64 lg:w-80 h-48 rounded-2xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/herramientas/calculadora_calorias_macros.png" 
+              alt="Calculadora de Calorías" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </header>
       </div>
 

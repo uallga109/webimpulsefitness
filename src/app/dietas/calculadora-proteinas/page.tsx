@@ -22,14 +22,23 @@ export default function CalculadoraProteinasPage() {
           <span className="text-gray-900 font-medium">Calculadora de Proteínas</span>
         </nav>
 
-        <header className="border-b border-gray-200 pb-6">
-          <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
-            Calculadora de Proteínas
-          </h1>
-          <p className="mt-2 text-base sm:text-lg text-gray-600 max-w-2xl">
-            Ajusta tu síntesis proteica diaria en función de tu peso corporal y
-            las exigencias específicas de tu disciplina de entrenamiento.
-          </p>
+        <header className="border-b border-gray-200 pb-8 flex flex-col md:flex-row gap-8 items-start md:items-center">
+          <div className="flex-1">
+            <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
+              Calculadora de Proteínas
+            </h1>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl">
+              Ajusta tu síntesis proteica diaria en función de tu peso corporal y
+              las exigencias específicas de tu disciplina de entrenamiento.
+            </p>
+          </div>
+          <div className="w-full md:w-64 lg:w-80 h-48 rounded-2xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/noticias/batido_post_entreno.png" 
+              alt="Calculadora de Proteínas" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </header>
       </div>
 
