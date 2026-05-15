@@ -15,6 +15,7 @@ const fitnessTools = [
     href: "/dietas/calculadora-calorias",
     tag: "Nutrición",
     tagColor: "bg-blue-50 text-blue-600",
+    image: "/images/herramientas/calculadora_calorias_macros.png"
   },
   {
     title: "Calculadora de IMC",
@@ -22,6 +23,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-imc",
     tag: "Salud",
     tagColor: "bg-green-50 text-green-600",
+    image: "/images/herramientas/calculadora_imc_grasa.png"
   },
   {
     title: "Calculadora de Proteína Diaria",
@@ -29,6 +31,7 @@ const fitnessTools = [
     href: "/dietas/calculadora-proteinas",
     tag: "Nutrición",
     tagColor: "bg-purple-50 text-purple-600",
+    image: "/images/noticias/batido_post_entreno.png"
   },
   {
     title: "Calculadora de Déficit Calórico",
@@ -36,6 +39,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-deficit",
     tag: "Nutrición",
     tagColor: "bg-red-50 text-red-600",
+    image: "/images/herramientas/calculadora_deficit.png"
   },
   {
     title: "Calculadora de Masa Muscular",
@@ -43,6 +47,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-masa-muscular",
     tag: "Fitness",
     tagColor: "bg-indigo-50 text-indigo-600",
+    image: "/images/herramientas/calculadora_masa_muscular_dexa.png"
   },
   {
     title: "Calculadora de Grasa Corporal",
@@ -50,6 +55,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-grasa-corporal",
     tag: "Fitness",
     tagColor: "bg-yellow-50 text-yellow-600",
+    image: "/images/herramientas/calculadora_grasa_corporal_caliper.png"
   },
   {
     title: "Calculadora de 1RM",
@@ -57,6 +63,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-1rm",
     tag: "Entrenamiento",
     tagColor: "bg-gray-100 text-gray-800",
+    image: "/images/herramientas/calculadora_1rm_fuerza.png"
   },
   {
     title: "Calculadora de Macros",
@@ -64,6 +71,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-macros",
     tag: "Nutrición",
     tagColor: "bg-blue-50 text-blue-600",
+    image: "/images/herramientas/calculadora_macros_pie.png"
   },
   {
     title: "Calculadora Ritmo Running",
@@ -71,6 +79,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-ritmo-running",
     tag: "Deportes",
     tagColor: "bg-orange-50 text-orange-600",
+    image: "/images/herramientas/calculadora_running_vo2.png"
   },
   {
     title: "Calculadora VO2 Max",
@@ -78,6 +87,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-vo2-max",
     tag: "Deportes",
     tagColor: "bg-cyan-50 text-cyan-600",
+    image: "/images/herramientas/calculadora_vo2_scientific.png"
   },
   {
     title: "Calculadora Hidratación",
@@ -85,6 +95,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-hidratacion",
     tag: "Salud",
     tagColor: "bg-blue-50 text-blue-500",
+    image: "/images/herramientas/calculadora_hidratacion_agua.png"
   },
   {
     title: "Calculadora Gasto Ciclismo",
@@ -92,6 +103,7 @@ const fitnessTools = [
     href: "/herramientas/calculadora-gasto-ciclismo",
     tag: "Deportes",
     tagColor: "bg-emerald-50 text-emerald-600",
+    image: "/images/herramientas/calculadora_ciclismo_vatios.png"
   },
 ];
 
@@ -102,6 +114,7 @@ const sportsTools = [
     href: "/herramientas/calculadora-ritmo-running",
     tag: "Running",
     tagColor: "bg-orange-50 text-orange-600",
+    image: "/images/herramientas/calculadora_running_vo2.png"
   },
   {
     title: "Calculadora VO2 Max",
@@ -109,6 +122,7 @@ const sportsTools = [
     href: "/herramientas/calculadora-vo2-max",
     tag: "Rendimiento",
     tagColor: "bg-cyan-50 text-cyan-600",
+    image: "/images/herramientas/calculadora_vo2_scientific.png"
   },
   {
     title: "Calculadora Hidratación",
@@ -116,6 +130,7 @@ const sportsTools = [
     href: "/herramientas/calculadora-hidratacion",
     tag: "Resistencia",
     tagColor: "bg-blue-50 text-blue-500",
+    image: "/images/herramientas/calculadora_hidratacion_agua.png"
   },
   {
     title: "Calculadora Gasto Ciclismo",
@@ -123,6 +138,7 @@ const sportsTools = [
     href: "/herramientas/calculadora-gasto-ciclismo",
     tag: "Ciclismo",
     tagColor: "bg-emerald-50 text-emerald-600",
+    image: "/images/herramientas/calculadora_ciclismo_vatios.png"
   },
 ];
 
@@ -153,23 +169,35 @@ export default function HerramientasPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {fitnessTools.map((tool, idx) => (
-            <article key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between group">
-              <div>
-                <span className={`px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider ${tool.tagColor}`}>
-                  {tool.tag}
-                </span>
-                <h3 className="text-lg font-bold text-[#111827] mt-3 group-hover:text-[#2563EB] transition-colors line-clamp-1">
+            <article key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all flex flex-col group overflow-hidden">
+              {/* Imagen de la herramienta */}
+              <div className="h-40 overflow-hidden relative">
+                <img
+                  src={tool.image}
+                  alt={tool.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3">
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shadow-sm ${tool.tagColor}`}>
+                    {tool.tag}
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-5 flex flex-col flex-1">
+                <h3 className="text-lg font-bold text-[#111827] group-hover:text-[#2563EB] transition-colors line-clamp-1">
                   {tool.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2">
+                <p className="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2 flex-1">
                   {tool.description}
                 </p>
-              </div>
-              <div className="mt-5 pt-4 border-t border-gray-50">
-                <Link href={tool.href} className="text-sm font-bold text-[#2563EB] hover:underline inline-flex items-center space-x-1">
-                  <span>Acceder</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </Link>
+                
+                <div className="mt-5 pt-4 border-t border-gray-50">
+                  <Link href={tool.href} className="text-sm font-bold text-[#2563EB] hover:underline inline-flex items-center space-x-1">
+                    <span>Acceder</span>
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
@@ -184,23 +212,35 @@ export default function HerramientasPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {sportsTools.map((tool, idx) => (
-            <article key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between group border-l-4 border-l-[#2563EB]">
-              <div>
-                <span className={`px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider ${tool.tagColor}`}>
-                  {tool.tag}
-                </span>
-                <h3 className="text-lg font-bold text-[#111827] mt-3 group-hover:text-[#2563EB] transition-colors line-clamp-1">
+            <article key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all flex flex-col group overflow-hidden">
+              {/* Imagen de la herramienta */}
+              <div className="h-40 overflow-hidden relative">
+                <img
+                  src={tool.image}
+                  alt={tool.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3">
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shadow-sm ${tool.tagColor}`}>
+                    {tool.tag}
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-5 flex flex-col flex-1">
+                <h3 className="text-lg font-bold text-[#111827] group-hover:text-[#2563EB] transition-colors line-clamp-1">
                   {tool.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2">
+                <p className="mt-2 text-sm text-gray-500 leading-relaxed line-clamp-2 flex-1">
                   {tool.description}
                 </p>
-              </div>
-              <div className="mt-5 pt-4 border-t border-gray-50">
-                <Link href={tool.href} className="text-sm font-bold text-[#2563EB] hover:underline inline-flex items-center space-x-1">
-                  <span>Acceder</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </Link>
+                
+                <div className="mt-5 pt-4 border-t border-gray-50">
+                  <Link href={tool.href} className="text-sm font-bold text-[#2563EB] hover:underline inline-flex items-center space-x-1">
+                    <span>Acceder</span>
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
@@ -209,4 +249,5 @@ export default function HerramientasPage() {
     </div>
   );
 }
+
 
