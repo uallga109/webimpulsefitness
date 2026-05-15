@@ -1,7 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { noticiasData, getNewsImage } from "@/components/noticias/NoticiasClient";
+import { noticiasData, getNewsImage } from "@/data/noticiasData";
 
 interface PageProps {
   params: Promise<{ slug: string }> | { slug: string };
@@ -63,8 +63,8 @@ export default async function NoticiaPage({ params }: PageProps) {
           </h3>
         );
       }
-      if (tLine.startsWith("*   ")) {
-        const innerText = tLine.replace("*   ", "");
+      if (tLine.startsWith("* ")) {
+        const innerText = tLine.replace(/^\* +/, "");
         const parts = innerText.split(/(\*\*.*?\*\*)/g);
         return (
           <li key={idx} className="flex items-start gap-3 my-2.5 text-base sm:text-lg text-gray-700 leading-relaxed">
