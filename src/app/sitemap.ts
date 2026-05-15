@@ -1,11 +1,13 @@
 import { MetadataRoute } from 'next'
-import { 
-  getAllSupplements, 
-  getAllDiets, 
-  getAllExercises, 
-  getAllTools, 
-  getAllGyms 
+import {
+  getAllSupplements,
+  getAllDiets,
+  getAllExercises,
+  getAllTools,
+  getAllGyms
 } from '@/lib/data'
+
+import { noticiasData } from '@/data/noticiasData'
 
 /**
  * GENERADOR DE SITEMAP 100% DINÁMICO
@@ -39,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   // 2. Rutas Dinámicas desde la "Base de Datos"
-  
+
   // Consultas en paralelo para máxima eficiencia
   const [supplements, diets, exercises, tools, gyms] = await Promise.all([
     getAllSupplements(),
@@ -84,6 +86,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  const noticiasRoutes = noticiasData.map((item: { slug: string; fecha: string }) => ({
+    url: `${baseUrl}/noticias/${item.slug}`,
+    lastModified: new Date(item.fecha) || new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
   return [
     ...staticRoutes,
     ...supplementRoutes,
@@ -91,5 +100,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...exerciseRoutes,
     ...toolRoutes,
     ...gymRoutes,
+    ...noticiasRoutes,
   ]
 }
