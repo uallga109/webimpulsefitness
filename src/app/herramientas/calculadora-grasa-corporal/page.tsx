@@ -20,12 +20,33 @@ export default function CalcGrasaCorporalPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight">
             Calculadora de Grasa Corporal
           </h1>
-          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl">
-            Determina tu porcentaje de tejido adiposo mediante perímetros corporales para llevar
-            un control preciso de tu recomposición corporal.
-          </p>
+          <div className="mt-4 space-y-4 text-base sm:text-lg text-gray-600 max-w-3xl leading-relaxed">
+            <p className="font-bold text-[#2563EB]">
+              Determina tu porcentaje de tejido adiposo para llevar un control preciso de tu recomposición corporal sin depender de básculas inexactas.
+            </p>
+            <p>
+              Las básculas de bioimpedancia comerciales suelen fallar estrepitosamente si tu nivel de hidratación varía. 
+              La forma más accesible y científicamente validada de estimar tu porcentaje de grasa corporal en casa es mediante el uso de cintas métricas corporales 
+              (Método de la Marina de EE. UU. o Fórmulas YMCA).
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <span className="font-bold text-[#2563EB] block text-lg mb-1">Precisión Anatómica</span>
+                Introduce tus perímetros para obtener una estimación de tu adiposidad.
+              </div>
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <span className="font-bold text-[#2563EB] block text-lg mb-1">Categorización</span>
+                Compara tus resultados con rangos de "Atleta" (6-13% en hombres) o "Saludable".
+              </div>
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <span className="font-bold text-[#2563EB] block text-lg mb-1">Monitorización</span>
+                Combina datos con fotos para el control absoluto de tu definición estética.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="w-full md:w-64 lg:w-80 h-48 rounded-2xl overflow-hidden shadow-lg order-1 md:order-2">
+        <div className="w-full md:w-64 lg:w-96 h-64 rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2 sticky top-4">
           <img 
             src="/images/herramientas/calculadora_grasa_corporal_caliper.png" 
             alt="Calculadora de Grasa Corporal" 

@@ -18,14 +18,34 @@ export default function CalcCiclismoPage() {
             <span>Deportes</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight">
-            Calculadora de Gasto Ciclismo
+            Gasto Calórico en Ciclismo
           </h1>
-          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl">
-            El ciclismo es una de las actividades con mayor gasto energético. Esta herramienta te
-            ayuda a estimar las calorías consumidas para planificar tu nutrición post-entreno.
-          </p>
+          <div className="mt-4 space-y-4 text-base sm:text-lg text-gray-600 max-w-3xl leading-relaxed">
+            <p className="font-bold text-[#2563EB]">
+              Estima con precisión científica las calorías consumidas sobre la bicicleta para planificar tus recargas de glucógeno y nutrición intra-entreno.
+            </p>
+            <p>
+              El ciclismo genera un gasto energético masivo que puede superar las 1.000 kcal por hora. Sin embargo, calcularlo es complejo, 
+              ya que la resistencia aerodinámica y los desniveles alteran la termodinámica del esfuerzo en comparación con correr o caminar.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+              <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                <h3 className="font-black text-emerald-800 text-xs uppercase tracking-widest mb-2">Evita la Pájara (Bonking)</h3>
+                <p className="text-sm">Conoce tu gasto por hora para calcular cuántos gramos de carbos (geles o isotónico) debes ingerir para no vaciar tus depósitos.</p>
+              </div>
+              <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
+                <h3 className="font-black text-emerald-800 text-xs uppercase tracking-widest mb-2">Déficit Calórico Preciso</h3>
+                <p className="text-sm">Si buscas perder peso, esta herramienta evita que sobrestimes tu entrenamiento y comas en exceso al llegar a casa.</p>
+              </div>
+            </div>
+
+            <p className="text-sm bg-gray-900 text-gray-300 p-5 rounded-2xl shadow-inner">
+              <span className="font-bold text-white block mb-2">Métricas Cruzadas:</span> Calculamos el gasto metabólico cruzando variables como tu peso corporal, el tiempo de pedaleo efectivo y la velocidad promedio de tu salida.
+            </p>
+          </div>
         </div>
-        <div className="w-full md:w-64 lg:w-80 h-48 rounded-2xl overflow-hidden shadow-lg order-1 md:order-2">
+        <div className="w-full md:w-64 lg:w-96 h-64 rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2 sticky top-4">
           <img 
             src="/images/herramientas/calculadora_ciclismo_vatios.png" 
             alt="Calculadora de Ciclismo" 
