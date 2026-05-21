@@ -35,12 +35,12 @@ export default function EjerciciosGimnasioPage() {
       {/* Grid de Grupos Musculares en formato Tarjetas (Cards) con sombra suave, hover ligero y esquinas de 16px a 24px */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
-          { name: "Pectoral", desc: "Presses y aperturas en todos los ángulos", tag: "Empuje" },
-          { name: "Dorsal & Espalda", desc: "Jalones, remos libres y dominadas", tag: "Tracción" },
-          { name: "Pierna (Cuádriceps/Isquios)", desc: "Sentadilla, prensa y peso muerto rumano", tag: "Tren Inferior" },
-          { name: "Hombro", desc: "Press militar y elevaciones laterales", tag: "Empuje" },
-          { name: "Brazos (Bíceps/Tríceps)", desc: "Curls concentrados y extensiones en polea", tag: "Aislado" },
-          { name: "Core & Abdomen", desc: "Estabilidad isométrica y trabajo pesado", tag: "Estabilidad" },
+          { name: "Pectoral", desc: "Presses y aperturas en todos los ángulos", tag: "Empuje", slug: "pectoral" },
+          { name: "Dorsal & Espalda", desc: "Jalones, remos libres y dominadas", tag: "Tracción", slug: "espalda" },
+          { name: "Pierna (Cuádriceps/Isquios)", desc: "Sentadilla, prensa y peso muerto rumano", tag: "Tren Inferior", slug: "pierna" },
+          { name: "Hombro", desc: "Press militar y elevaciones laterales", tag: "Empuje", slug: "hombro" },
+          { name: "Brazos (Bíceps/Tríceps)", desc: "Curls concentrados y extensiones en polea", tag: "Aislado", slug: "brazos" },
+          { name: "Core & Abdomen", desc: "Estabilidad isométrica y trabajo pesado", tag: "Estabilidad", slug: "core" },
         ].map((item, idx) => (
           <article
             key={idx}
@@ -57,10 +57,13 @@ export default function EjerciciosGimnasioPage() {
             
             {/* Color primario: Azul eléctrico moderado (#2563EB) */}
             <div className="mt-6 pt-4 border-t border-gray-100">
-              <button className="text-sm font-bold text-[#2563EB] hover:underline flex items-center space-x-1">
+              <Link 
+                href={`/rutinas/gimnasio/${item.slug}`}
+                className="text-sm font-bold text-[#2563EB] hover:underline flex items-center space-x-1"
+              >
                 <span>Ver biblioteca de ejercicios</span>
                 <span>→</span>
-              </button>
+              </Link>
             </div>
           </article>
         ))}

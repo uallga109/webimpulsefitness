@@ -52,7 +52,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🧗",
     color: "bg-gray-100 text-gray-900",
-    href: "/rutinas/casa/barra-dominadas"
+    href: "/rutinas/casa/barra-dominadas",
+    image: "/images/ejercicios/barra_dominadas.png"
   },
   {
     id: 4,
@@ -63,7 +64,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material", "Cardio"],
     icon: "🔥",
     color: "bg-red-50 text-red-600",
-    href: "/rutinas/casa/hiit-casa"
+    href: "/rutinas/casa/hiit-casa",
+    image: "/images/ejercicios/hiit_casa.png"
   },
   {
     id: 5,
@@ -74,7 +76,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material", "Movilidad"],
     icon: "🧘",
     color: "bg-green-50 text-[#22C55E]",
-    href: "/rutinas/casa/yoga-movilidad"
+    href: "/rutinas/casa/yoga-movilidad",
+    image: "/images/ejercicios/yoga_movilidad.png"
   },
   {
     id: 6,
@@ -85,7 +88,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🥏",
     color: "bg-purple-50 text-purple-600",
-    href: "/rutinas/casa/sliders"
+    href: "/rutinas/casa/sliders",
+    image: "/images/ejercicios/sliders.png"
   },
   {
     id: 7,
@@ -96,7 +100,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material"],
     icon: "🎒",
     color: "bg-yellow-50 text-yellow-600",
-    href: "/rutinas/casa/mochila-lastrada"
+    href: "/rutinas/casa/mochila-lastrada",
+    image: "/images/ejercicios/mochila_lastrada.png"
   },
   {
     id: 8,
@@ -107,7 +112,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material", "Movilidad"],
     icon: "🤸",
     color: "bg-indigo-50 text-indigo-600",
-    href: "/rutinas/casa/pilates-suelo"
+    href: "/rutinas/casa/pilates-suelo",
+    image: "/images/ejercicios/pilates_suelo.png"
   },
   {
     id: 9,
@@ -118,7 +124,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🧱",
     color: "bg-slate-100 text-slate-800",
-    href: "/rutinas/casa/miniparalelas"
+    href: "/rutinas/casa/miniparalelas",
+    image: "/images/ejercicios/miniparalelas.png"
   },
   {
     id: 10,
@@ -129,7 +136,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios", "Cardio"],
     icon: "➰",
     color: "bg-rose-50 text-rose-600",
-    href: "/rutinas/casa/salto-comba"
+    href: "/rutinas/casa/salto-comba",
+    image: "/images/ejercicios/salto_comba.png"
   },
   {
     id: 11,
@@ -140,7 +148,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material"],
     icon: "🛑",
     color: "bg-emerald-50 text-emerald-600",
-    href: "/rutinas/casa/entrenamiento-isometrico"
+    href: "/rutinas/casa/entrenamiento-isometrico",
+    image: "/images/ejercicios/isometrico.png"
   },
   {
     id: 12,
@@ -151,7 +160,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🔵",
     color: "bg-cyan-50 text-cyan-600",
-    href: "/rutinas/casa/fitball"
+    href: "/rutinas/casa/fitball",
+    image: "/images/ejercicios/fitball.png"
   },
   {
     id: 13,
@@ -162,7 +172,8 @@ const exercises: Exercise[] = [
     categories: ["Sin Material"],
     icon: "👤",
     color: "bg-violet-50 text-violet-600",
-    href: "/rutinas/casa/peso-corporal"
+    href: "/rutinas/casa/peso-corporal",
+    image: "/images/ejercicios/peso_corporal.png"
   },
   {
     id: 14,
@@ -173,7 +184,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🎗️",
     color: "bg-fuchsia-50 text-fuchsia-600",
-    href: "/rutinas/casa/bandas-elasticas"
+    href: "/rutinas/casa/bandas-elasticas",
+    image: "/images/ejercicios/trx.png"
   },
   {
     id: 15,
@@ -184,7 +196,8 @@ const exercises: Exercise[] = [
     categories: ["Con Accesorios"],
     icon: "🏋️",
     color: "bg-neutral-100 text-neutral-800",
-    href: "/rutinas/casa/mancuernas-ajustables"
+    href: "/rutinas/casa/mancuernas-ajustables",
+    image: "/images/ejercicios/brazos.png"
   }
 ];
 
