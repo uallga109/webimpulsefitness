@@ -10,7 +10,7 @@ import {
 import { noticiasData } from '@/data/noticiasData'
 
 /**
- * GENERADOR DE SITEMAP 100% DINÁMICO
+ * GENERADOR DE SITEMAP 100% DINÁMICO Y COMPLETO
  */
 
 // Helper para parsear fechas en español (Ej: "12 Mayo 2026")
@@ -44,25 +44,76 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 1. Rutas Estáticas Manuales
   const staticPaths = [
-    '',
-    '/rutinas',
-    '/rutinas/casa',
-    '/dietas',
-    '/suplementos',
-    '/herramientas',
-    '/gyms',
-    '/marcas',
-    '/noticias',
-    '/aviso-legal',
-    '/politica-de-privacidad',
-    '/politica-de-cookies'
+    { path: '', priority: 1.0, changeFrequency: 'daily' as const },
+    
+    // Hubs Principales
+    { path: '/rutinas', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/rutinas/casa', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/rutinas/gimnasio', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/rutinas/generador', priority: 0.8, changeFrequency: 'weekly' as const },
+    
+    { path: '/dietas', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/suplementos', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/herramientas', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/marcas', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/noticias', priority: 0.8, changeFrequency: 'weekly' as const },
+    
+    // Rutas Estáticas de Deportes y Eventos
+    { path: '/deportes', priority: 0.7, changeFrequency: 'weekly' as const },
+    { path: '/eventos', priority: 0.7, changeFrequency: 'weekly' as const },
+
+    // Rutas Estáticas de Calculadoras Duplicadas en /dietas (Silado SEO)
+    { path: '/dietas/calculadora-calorias', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/dietas/calculadora-proteinas', priority: 0.7, changeFrequency: 'monthly' as const },
+
+    // Rutas de Gimnasio Estáticas por Grupo Muscular
+    { path: '/rutinas/gimnasio/brazos', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/rutinas/gimnasio/core', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/rutinas/gimnasio/espalda', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/rutinas/gimnasio/hombro', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/rutinas/gimnasio/pectoral', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/rutinas/gimnasio/pierna', priority: 0.7, changeFrequency: 'monthly' as const },
+
+    // Marcas de Élite Individuales (Manuales para asegurar indexación perfecta)
+    { path: '/marcas/eleiko-sport', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/marcas/rogue-fitness', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/marcas/hsn-labs', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/marcas/technogym', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/marcas/sbd-apparel', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/marcas/gymshark', priority: 0.7, changeFrequency: 'monthly' as const },
+
+    // Hubs de Gimnasios y Marketing Local
+    { path: '/gimnasios', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/gimnasios/marketing', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/gimnasios/marketing/captacion', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/gimnasios/marketing/fidelizacion', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/gimnasios/marketing/rentabilidad', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/gimnasios/marketing/seo-local', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/gimnasios/marketing/calculadora-roi', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/gimnasios/marketing/plantillas-copywriting', priority: 0.7, changeFrequency: 'monthly' as const },
+
+    // Hubs de Entrenadores y Marketing Digital
+    { path: '/entrenadores', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/entrenadores/marketing', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/entrenadores/marketing/automatizacion', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/entrenadores/marketing/confianza', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/entrenadores/marketing/escalabilidad', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/entrenadores/marketing/visibilidad', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/entrenadores/marketing/calculadora-tarifas', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/entrenadores/marketing/playbook-adquisicion', priority: 0.7, changeFrequency: 'monthly' as const },
+
+    // Corporativo y Legales
+    { path: '/sobre-nosotros', priority: 0.5, changeFrequency: 'monthly' as const },
+    { path: '/aviso-legal', priority: 0.3, changeFrequency: 'yearly' as const },
+    { path: '/politica-de-privacidad', priority: 0.3, changeFrequency: 'yearly' as const },
+    { path: '/politica-de-cookies', priority: 0.3, changeFrequency: 'yearly' as const }
   ]
 
-  const staticRoutes = staticPaths.map((route) => ({
-    url: `${baseUrl}${route}`,
+  const staticRoutes = staticPaths.map((item) => ({
+    url: `${baseUrl}${item.path}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
+    changeFrequency: item.changeFrequency,
+    priority: item.priority,
   }))
 
   // 2. Rutas Dinámicas desde la "Base de Datos"
@@ -78,7 +129,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/suplementos/${item.slug}`,
     lastModified: item.lastModified,
     changeFrequency: 'monthly' as const,
-    priority: 0.6,
+    priority: 0.7,
   }))
 
   const dietRoutes = diets.map((item) => ({
@@ -92,18 +143,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/rutinas/casa/${item.slug}`,
     lastModified: item.lastModified,
     changeFrequency: 'monthly' as const,
-    priority: 0.6,
+    priority: 0.7,
   }))
 
-  const toolRoutes = tools.map((item) => ({
-    url: `${baseUrl}/herramientas/${item.slug}`,
-    lastModified: item.lastModified,
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }))
+  const toolRoutes = tools
+    .filter((item) => item.slug !== 'calculadora-calorias' && item.slug !== 'calculadora-proteinas')
+    .map((item) => ({
+      url: `${baseUrl}/herramientas/${item.slug}`,
+      lastModified: item.lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }))
 
+  // CORREGIDO: Ruta correcta es /gimnasios/ en lugar de /gyms/
   const gymRoutes = gyms.map((item) => ({
-    url: `${baseUrl}/gyms/${item.slug}`,
+    url: `${baseUrl}/gimnasios/${item.slug}`,
     lastModified: item.lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
@@ -113,7 +167,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/noticias/${item.slug}`,
     lastModified: parseSpanishDate(item.fecha),
     changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    priority: 0.7,
   }))
 
   return [

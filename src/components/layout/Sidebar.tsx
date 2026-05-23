@@ -43,7 +43,6 @@ export default function Sidebar() {
       ),
       subItems: [
         { title: "Inicio Gimnasios", href: "/gimnasios" },
-        { title: "Buscador de gimnasios", href: "/gimnasios/buscador" },
         { title: "Marketing para gimnasios", href: "/gimnasios/marketing" },
       ],
     },
@@ -58,7 +57,6 @@ export default function Sidebar() {
       ),
       subItems: [
         { title: "Inicio Entrenadores", href: "/entrenadores" },
-        { title: "Buscador de entrenadores", href: "/entrenadores/buscador" },
         { title: "Marketing para entrenadores", href: "/entrenadores/marketing" },
       ],
     },
@@ -349,10 +347,10 @@ export default function Sidebar() {
             </p>
             {/* Color primario: Azul eléctrico moderado (#2563EB) para botones y enlaces */}
             <Link
-              href="/gimnasios/buscador"
+              href="/gimnasios/marketing"
               className="inline-flex items-center justify-center w-full py-2.5 px-3 rounded-xl bg-[#2563EB] hover:bg-blue-700 text-white font-medium text-sm shadow-sm transition-all"
             >
-              Explorar directorio
+              Soluciones de Marketing
             </Link>
           </div>
         </div>

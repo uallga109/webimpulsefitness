@@ -31,11 +31,32 @@ export default function GlobalSearchBar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Enrutamiento inteligente basado en palabras clave para evitar páginas vacías
+  const getSmartRoute = (text: string): string => {
+    const q = text.trim().toLowerCase();
+    if (q.includes("gim") || q.includes("centr") || q.includes("club") || q.includes("local")) {
+      return "/gimnasios/marketing";
+    }
+    if (q.includes("entren") || q.includes("coach") || q.includes("person") || q.includes("marca")) {
+      return "/entrenadores/marketing";
+    }
+    if (q.includes("calor") || q.includes("macro") || q.includes("diet") || q.includes("prote") || q.includes("nutri")) {
+      return "/dietas";
+    }
+    if (q.includes("rutin") || q.includes("ejercic") || q.includes("crossfit") || q.includes("fuerz") || q.includes("hipertrofia") || q.includes("pecho") || q.includes("espalda")) {
+      return "/rutinas";
+    }
+    if (q.includes("suple") || q.includes("crea") || q.includes("whey") || q.includes("proteina")) {
+      return "/suplementos";
+    }
+    return "/herramientas";
+  };
+
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
     setIsFocused(false);
-    router.push(`/gimnasios/buscador?q=${encodeURIComponent(searchQuery.trim())}`);
+    router.push(getSmartRoute(searchQuery));
   };
 
   const handleSelectSuggestion = (text: string, customHref?: string) => {
@@ -44,7 +65,7 @@ export default function GlobalSearchBar() {
     if (customHref) {
       router.push(customHref);
     } else {
-      router.push(`/gimnasios/buscador?q=${encodeURIComponent(text)}`);
+      router.push(getSmartRoute(text));
     }
   };
 
@@ -184,35 +205,35 @@ export default function GlobalSearchBar() {
       return {
         featured: [
           {
-            title: "Gimnasio Fitness Hub Madrid Central",
-            subtitle: "Equipamiento Eleiko de última generación y zona de Powerlifting",
-            badge: "DESTACADO",
+            title: "Calculadora de ROI de Marketing",
+            subtitle: "Estima el retorno de inversión y el coste de adquisición (CAC) de tu centro",
+            badge: "CALCULADORA",
             badgeColor: "bg-[#2563EB] text-white",
-            icon: "🏢",
-            href: "/gimnasios/buscador",
+            icon: "📊",
+            href: "/gimnasios/marketing/calculadora-roi",
           },
           {
-            title: "Centro Deportivo Wellness Barcelona",
-            subtitle: "Piscina olímpica, spa y clases colectivas premium",
-            badge: "PREMIUM",
+            title: "Estrategias de Captación Local B2B",
+            subtitle: "Embudos de adquisición y secuencias de WhatsApp para gimnasios",
+            badge: "PLAN",
             badgeColor: "bg-[#22C55E] text-white",
-            icon: "🏊‍♂️",
-            href: "/gimnasios/buscador",
+            icon: "📈",
+            href: "/gimnasios/marketing/captacion",
           },
         ],
-        categories: ["Gimnasios 24h", "Boutique Studios", "CrossFit Boxes", "Centros de Yoga"],
+        categories: ["Marketing Local", "Retención de Socios", "SEO en Google Maps", "Optimización ROI"],
         strings: [
-          "gimnasio",
-          "gimnasios madrid",
-          "gimnasio barato",
-          "gimnasio con piscina",
-          "gimnasios barcelona",
-          "gimnasio cerca de mi",
+          "marketing de gimnasios",
+          "calculadora roi gimnasio",
+          "captacion de socios",
+          "seo local para gimnasios",
+          "fidelizacion de clientes",
+          "fichas de google maps",
         ],
         advice: [
-          "Cómo elegir el mejor gimnasio según tus objetivos de entrenamiento",
-          "Diferencias entre gimnasios comerciales y centros de especialización",
-          "Equipamiento mínimo que debería tener un gimnasio de calidad",
+          "Cómo captar clientes para tu gimnasio en menos de 72 horas",
+          "Claves de SEO local para aparecer el primero en Google Maps",
+          "El método definitivo para reducir el churn rate en centros deportivos",
         ],
       };
     }
@@ -334,35 +355,35 @@ export default function GlobalSearchBar() {
     return {
       featured: [
         {
-          title: "Directorio Global de Gimnasios",
-          subtitle: "Compara pases de prueba y cuotas mensuales",
-          badge: "B2C",
+          title: "Marketing para Gimnasios",
+          subtitle: "Calculadoras de ROI, plantillas y planes B2B de captación",
+          badge: "B2B",
           badgeColor: "bg-[#2563EB] text-white",
-          icon: "🏛️",
-          href: "/gimnasios/buscador",
+          icon: "🏢",
+          href: "/gimnasios/marketing",
         },
         {
-          title: "Entrenadores Certificados",
-          subtitle: "Encuentra el profesional que mejor se adapte a ti",
-          badge: "NUEVO",
+          title: "Marketing para Entrenadores",
+          subtitle: "Calculadoras de tarifas, automatizaciones y playbooks",
+          badge: "B2B",
           badgeColor: "bg-[#22C55E] text-white",
-          icon: "👤",
-          href: "/entrenadores/buscador",
+          icon: "🚀",
+          href: "/entrenadores/marketing",
         },
       ],
-      categories: ["Gimnasios Cercanos", "Entrenadores Online", "Planes de Entrenamiento", "Calculadoras"],
+      categories: ["Calculadoras B2B", "Estrategia Local", "Planes de Entrenamiento", "Herramientas de Salud"],
       strings: [
         searchQuery,
-        `${searchQuery} en madrid`,
-        `${searchQuery} barcelona`,
+        `marketing para ${searchQuery}`,
+        `calculadora de ${searchQuery}`,
         `rutinas de ${searchQuery}`,
-        `comprar ${searchQuery}`,
-        `mejores ${searchQuery}`,
+        `estrategias de ${searchQuery}`,
+        `herramientas ${searchQuery}`,
       ],
       advice: [
         `Cómo integrar ${searchQuery} en tu planificación semanal`,
         `Últimos estudios sobre la efectividad de ${searchQuery}`,
-        `Errores comunes al buscar ${searchQuery}`,
+        `Errores comunes al planificar ${searchQuery}`,
       ],
     };
   };
@@ -554,7 +575,7 @@ export default function GlobalSearchBar() {
           {/* Pie del Popover */}
           <div className="bg-gray-50/80 px-6 py-2.5 border-t border-gray-100 flex items-center justify-between">
             <span className="text-xs text-gray-500">
-              Presiona <strong className="text-[#111827]">Enter</strong> para ver resultados del directorio B2C
+              Presiona <strong className="text-[#111827]">Enter</strong> para ver la página recomendada del ecosistema
             </span>
             <button
               type="button"

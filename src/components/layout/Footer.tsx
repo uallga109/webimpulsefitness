@@ -34,6 +34,12 @@ export default function Footer() {
           {/* Columna Derecha: Enlaces Legales */}
           <nav className="flex flex-wrap gap-x-8 gap-y-4">
             <Link 
+              href="/sobre-nosotros" 
+              className="text-sm font-bold text-gray-500 hover:text-[#2563EB] transition-colors"
+            >
+              Sobre Nosotros
+            </Link>
+            <Link 
               href="/aviso-legal" 
               className="text-sm font-bold text-gray-500 hover:text-[#2563EB] transition-colors"
             >

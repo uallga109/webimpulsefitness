@@ -9,54 +9,75 @@ export const metadata: Metadata = {
 
 export default function CalcCiclismoPage() {
   return (
-    <div className="flex flex-col space-y-8 animate-fadeIn">
-      <header className="border-b border-gray-200 pb-8 flex flex-col md:flex-row gap-8 items-start md:items-center">
-        <div className="flex-1 order-2 md:order-1">
-          <div className="inline-flex items-center space-x-2 text-xs font-bold text-[#2563EB] uppercase tracking-wider mb-2">
-            <span>Herramientas</span>
-            <span>•</span>
-            <span>Deportes</span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight">
-            Gasto Calórico en Ciclismo
-          </h1>
-          <div className="mt-4 space-y-4 text-base sm:text-lg text-gray-600 max-w-3xl leading-relaxed">
-            <p className="font-bold text-[#2563EB]">
-              Estima con precisión científica las calorías consumidas sobre la bicicleta para planificar tus recargas de glucógeno y nutrición intra-entreno.
-            </p>
-            <p>
-              El ciclismo genera un gasto energético masivo que puede superar las 1.000 kcal por hora. Sin embargo, calcularlo es complejo, 
-              ya que la resistencia aerodinámica y los desniveles alteran la termodinámica del esfuerzo en comparación con correr o caminar.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
-                <h3 className="font-black text-emerald-800 text-xs uppercase tracking-widest mb-2">Evita la Pájara (Bonking)</h3>
-                <p className="text-sm">Conoce tu gasto por hora para calcular cuántos gramos de carbos (geles o isotónico) debes ingerir para no vaciar tus depósitos.</p>
-              </div>
-              <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
-                <h3 className="font-black text-emerald-800 text-xs uppercase tracking-widest mb-2">Déficit Calórico Preciso</h3>
-                <p className="text-sm">Si buscas perder peso, esta herramienta evita que sobrestimes tu entrenamiento y comas en exceso al llegar a casa.</p>
-              </div>
-            </div>
-
-            <p className="text-sm bg-gray-900 text-gray-300 p-5 rounded-2xl shadow-inner">
-              <span className="font-bold text-white block mb-2">Métricas Cruzadas:</span> Calculamos el gasto metabólico cruzando variables como tu peso corporal, el tiempo de pedaleo efectivo y la velocidad promedio de tu salida.
-            </p>
-          </div>
+    <div className="flex flex-col space-y-12 animate-fadeIn max-w-4xl mx-auto py-8">
+      {/* 1. Encabezado Hero Simple y Limpio (Excelente UX) */}
+      <header className="border-b border-gray-200 pb-6">
+        <div className="inline-flex items-center space-x-2 text-xs font-bold text-[#2563EB] uppercase tracking-wider mb-2">
+          <span>Herramientas</span>
+          <span>•</span>
+          <span>Deportes</span>
         </div>
-        <div className="w-full md:w-64 lg:w-96 h-64 rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2 sticky top-4">
-          <img 
-            src="/images/herramientas/calculadora_ciclismo_vatios.png" 
-            alt="Calculadora de Ciclismo" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight">
+          Gasto Calórico en Ciclismo
+        </h1>
+        <p className="text-gray-500 mt-2 text-base sm:text-lg font-medium">
+          Estima las calorías consumidas sobre la bicicleta para planificar tus recargas de glucógeno de forma profesional.
+        </p>
       </header>
 
-      <div className="py-8">
+      {/* 2. La Herramienta Interactiva en primer plano */}
+      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm">
         <CalcCiclismoClient />
-      </div>
+      </section>
+
+      {/* 3. Bloque de Texto SEO Profundo (E-E-A-T para Google) */}
+      <article className="prose prose-blue max-w-none text-gray-600 space-y-8 leading-relaxed border-t border-gray-200 pt-10">
+        <h2 className="text-2xl font-black text-[#111827]">¿Cómo se determina el Gasto Energético en el Ciclismo?</h2>
+        <p>
+          El ciclismo es un deporte aeróbico de alta eficiencia muscular que genera un **gasto energético masivo**, capaz de superar fácilmente las 800-1000 calorías por hora a intensidades moderadas o altas. Estimar este gasto es fundamental para que los deportistas planifiquen adecuadamente su nutrición e hidratación.
+        </p>
+        <p>
+          A diferencia del running, en el ciclismo la **resistencia aerodinámica** y el peso del ciclista (especialmente al subir pendientes) alteran drásticamente el consumo de energía en vatios, haciendo que la velocidad media y el tiempo efectivo sean las variables cinemáticas de mayor peso para estimar el consumo calórico indirecto.
+        </p>
+
+        <h2 className="text-2xl font-black text-[#111827]">Los Equivalentes Metabólicos (METs) Aplicados a la Bicicleta</h2>
+        <p>
+          Para realizar una estimación científica, nuestra calculadora utiliza el sistema de **Equivalentes Metabólicos (METs)**, un estándar de fisiología médica deportiva que representa la tasa de consumo de oxígeno por minuto de una actividad en comparación con el reposo basal (1 MET = 3.5 ml O₂/kg/min). 
+        </p>
+        <p>
+          Según la velocidad de pedaleo, se aplican los siguientes factores METs oficiales:
+        </p>
+        <ul className="list-disc pl-6 space-y-3">
+          <li>
+            <strong>Paseo / Ritmo suave (&lt; 15 km/h):</strong> Equivale a unos **4.0 METs**.
+          </li>
+          <li>
+            <strong>Ritmo moderado (15 - 20 km/h):</strong> Representa aproximadamente **6.0 METs**.
+          </li>
+          <li>
+            <strong>Ritmo activo / Deportivo (20 - 25 km/h):</strong> Aumenta la intensidad a unos **8.0 METs**.
+          </li>
+          <li>
+            <strong>Entrenamiento de alta intensidad / Competición (&gt; 25 km/h):</strong> Exige demandas metabólicas extremas superiores a **10.0 - 12.0 METs**.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-black text-[#111827]">La Importancia de la Nutrición Intra-Entrenamiento para Ciclistas</h2>
+        <p>
+          Conocer tu gasto energético exacto en tus salidas o rodajes sobre la bicicleta te aporta beneficios nutricionales determinantes:
+        </p>
+        <ul className="list-disc pl-6 space-y-3">
+          <li>
+            <strong>Prevención de la &ldquo;Pájara&rdquo; (Bonking):</strong> Ocurre cuando el organismo agota por completo sus reservas de glucógeno hepático y muscular, obligándolo a degradar aminoácidos en condiciones de fatiga extrema.
+          </li>
+          <li>
+            <strong>Dosificación de Carbohidratos:</strong> Para salidas superiores a las 2 horas, se aconseja ingerir entre **60g y 90g de carbohidratos por hora** (mediante geles, ciclodextrina o barritas) para compensar el gasto calórico activo sin decaer en potencia.
+          </li>
+          <li>
+            <strong>Recomposición Corporal Inteligente:</strong> Evita que los ciclistas recreativos sobrestimen el gasto del entrenamiento y consuman calorías en exceso al finalizar la salida, boicoteando sus objetivos de pérdida de grasa.
+          </li>
+        </ul>
+      </article>
     </div>
   );
 }

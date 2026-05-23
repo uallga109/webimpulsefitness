@@ -1,0 +1,77 @@
+Informe "Acciones manuales"
+ Comprueba si se han aplicado acciones manuales a tu sitio y consulta su historial de este tipo de acciones.
+Cuando se aplica alguna acción manual a un sitio, parte o la totalidad del sitio no aparece en los resultados de búsqueda de Google.
+Abrir el informe "Acciones manuales"
+ 
+¿Qué es una acción manual?
+Google aplica acciones manuales a sitios cuando un revisor humano de Google determina que algunas páginas de estos sitios no cumplen las políticas de spam de Google. La mayoría de las acciones manuales están relacionadas con intentos de manipular el índice de búsqueda de Google. En consecuencia, la mayoría de los problemas que se indican en este informe acaban causando que las páginas o los sitios afectados pierdan posiciones en los resultados de búsqueda o directamente dejen de aparecer en ellos sin mostrar ninguna indicación visual a los usuarios.
+Si tu sitio se ve afectado por una acción manual, te lo notificaremos en el informe "Acciones manuales" y en el centro de mensajes de Search Console.
+¿Por qué existen las acciones manuales?
+Desde el nacimiento de los buscadores, hay usuarios que se dedican a buscar técnicas fraudulentas para aparecer en los primeros puestos de los resultados de búsqueda. Estas prácticas perjudican a los usuarios que buscan contenido porque las páginas que más les interesan quedan ocultas detrás de otras que son irrelevantes. Asimismo, afectan de un modo negativo a los sitios web legítimos, ya que es más difícil encontrarlos. Por estos motivos, desde el lanzamiento de Google trabajamos para luchar contra los spammers, ayudar a los usuarios a encontrar las respuestas que buscan y hacer que los sitios web legítimos reciban tráfico procedente de búsquedas.
+Google trabaja continuamente para mejorar la búsqueda. Utilizamos un método basado en los datos y contamos con analistas, investigadores y estadísticos que evalúan la calidad de las búsquedas a tiempo completo. Sometemos los cambios en nuestros algoritmos a exhaustivos análisis de calidad antes de aplicarlos. Más información sobre nuestro algoritmo
+Nuestros algoritmos son extremadamente eficaces en la detección de spam y, en la mayor parte de los casos, descubrimos y eliminamos automáticamente los casos de spam de nuestros resultados de búsqueda. No obstante, para proteger la calidad de nuestro índice, también quitamos spam de nuestros resultados de búsqueda mediante acciones manuales.
+¿Se ha aplicado alguna acción manual a mi sitio?
+Puedes ver cuántas acciones manuales se han aplicado a tu sitio en la parte superior del informe. Si no se ha aplicado ninguna, verás una marca de verificación verde y el mensaje correspondiente.
+¡Pero si acabo de comprar este sitio!
+Si has comprado recientemente un sitio que infringía nuestras políticas de spam antes de que fuera tuyo, soluciona los problemas que se detallan en este informe. A continuación, indícanos en tu solicitud de reconsideración que has adquirido el sitio hace poco y que ahora no infringe las políticas.
+¿Qué páginas están afectadas?
+Amplía la descripción de la acción manual para ver una lista de los patrones de las páginas afectadas. Puede ser un subconjunto o la totalidad de tu sitio. No todas las páginas que tengan esos patrones tienen por qué estar afectadas.
+Ejemplo:
+https://example.com/pisosenventa/*: parte o la totalidad de las páginas del directorio pisosenventa/ están afectadas.
+Afecta a todas las páginas: las acciones manuales que contengan esta descripción afectan a todo el sitio.
+¿Cómo soluciono el problema?
+Para resolver una acción manual aplicada a tu sitio, sigue estos pasos:
+En el informe, amplía el panel de descripción de la acción manual para obtener más información.
+Consulta qué páginas están afectadas.
+Revisa el tipo de problema y su descripción breve; a continuación, haz clic en el enlace "Más información" para ver información detallada y los pasos para solucionar el problema. Puedes encontrar información detallada de cada acción más adelante en esta misma página.
+Soluciona el problema en todas las páginas afectadas. Solucionar el problema solo en algunas páginas no significa que vayas a volver a aparecer parcialmente en los resultados de búsqueda. Si tienes varias acciones manuales en tu sitio, lee la información sobre todas ellas y corrígelas.
+Asegúrate de que Google pueda acceder a tus páginas; las páginas afectadas no deben requerir un inicio de sesión, estar detrás de un muro de pago ni estar bloqueadas por robots.txt o una directiva noindex. Puedes comprobar si se puede acceder a ellas con la herramienta de inspección de URLs.
+Cuando hayas corregido todos los problemas indicados en el informe en todas las páginas, haz clic en Solicitar revisión. En tu solicitud de reconsideración, describe las correcciones que has hecho. Una buena solicitud cumple tres requisitos:
+Se explica con exactitud cuál es el problema de calidad del sitio.
+Se describen los pasos que se han llevado a cabo para solucionar el problema.
+Se documenta el resultado de las soluciones.
+Las solicitudes de reconsideración pueden tardar en revisarse. Consulta más información en la siguiente sección. Se te informará del progreso por correo. Cuando envíes la solicitud, recibirás un mensaje de confirmación para informarte de que la revisión está en curso. No vuelvas a enviar otra solicitud hasta que se te notifique la decisión final sobre la solicitud pendiente.
+¿Cuánto tardan en revisarse las solicitudes de reconsideración?
+En la mayoría de los casos, las solicitudes de reconsideración pueden tardar entre varios días y varias semanas en revisarse. Sin embargo, algunas puede que lleven más tiempo (por ejemplo, las relacionadas con enlaces). Te enviaremos un correo cuando recibamos tu solicitud para que sepas que está activa. También recibirás un correo cuando se haya completado la revisión. No vuelvas a enviar otra solicitud hasta que no se resuelvan las que tengas pendientes.
+Lista de acciones manuales
+A continuación, se explican las acciones manuales que puede aplicar Google y cómo solucionarlas.
+Secuestro del botón para volver
+Han atacado el sitio con spam externo
+Spam generado por usuarios
+Spam en servicio de alojamiento gratuito
+Problema con los datos estructurados
+Enlaces artificiales a tu sitio
+Enlaces artificiales desde tu sitio
+Contenido con poco o ningún valor añadido
+Google ha detectado páginas de baja calidad o superficiales en tu sitio. A continuación, tienes algunos ejemplos de páginas que aportan poco o ningún valor añadido:
+Páginas de enlaces afiliados sin valor
+Contenido de otras fuentes (por ejemplo, contenido copiado o entradas de blog de baja calidad por parte de invitados)
+Páginas puerta
+Estas técnicas no ofrecen contenido único ni interesante para los usuarios, e infringen nuestras políticas de spam.
+Recomendaciones
+En primer lugar, revisa las siguientes secciones de nuestras políticas de spam:
+Páginas de enlaces afiliados sin valor
+Contenido copiado
+Páginas puerta
+A continuación, sigue estos pasos para identificar y corregir las infracciones de tu sitio:
+Comprueba si hay contenido en el sitio que duplique el contenido que aparece en cualquier otra parte.
+Comprueba si en tu sitio hay páginas con contenido sin valor que incluyan enlaces de afiliados.
+Comprueba si hay páginas puerta en tu sitio.
+Si tu sitio incluye cualquiera de estos tipos de contenido, piensa si ofrece valor añadido significativo a los usuarios. 
+Consejo: Pide a tus amigos o familiares (a personas reales que no estén relacionadas con tu sitio) que usen o que valoren el sitio para que te den ideas sobre cómo mejorarlo.
+Mejora tu sitio para que resulte útil a los usuarios.
+Cuando consideres que tu sitio ya no infringe nuestras políticas de spam, ve al informe "Acciones manuales" y selecciona Solicitar revisión. Proporciona ejemplos del contenido no adecuado que has retirado y del contenido de calidad que has añadido.
+Una vez enviada la solicitud de reconsideración, ten paciencia y espera a que aparezcan mensajes sobre el estado de la revisión en tu cuenta de Search Console; te avisaremos cuando hayamos revisado tu sitio. Si decidimos que tu sitio ya no infringe ninguna de nuestras políticas de spam, revocaremos la acción manual.
+Encubrimiento o redirecciones engañosas
+Problemas graves de spam
+Imágenes encubiertas
+Texto oculto o exceso de palabras clave
+El contenido de AMP no coincide
+Redirecciones engañosas en móviles
+Infracciones de las políticas de News y Discover
+Abuso de reputación del sitio
+¿Qué diferencias hay entre el informe "Acciones manuales" y el informe "Problemas de seguridad"?
+Los informes "Acciones manuales" y "Problemas de seguridad" coinciden en ciertos aspectos, así que es importante entender las diferencias entre ambos:
+El informe "Acciones manuales" recoge los problemas de una página o un sitio detectados de forma manual; en general, suelen ser intentos de manipular nuestro índice de búsqueda que no siempre suponen un peligro para los usuarios. La mayoría de los problemas mencionados en este informe acaban provocando que empeore el posicionamiento de una página o de un sitio o incluso que desaparezcan de los resultados de búsqueda sin que el usuario reciba ninguna indicación visual al respecto.
+El informe "Problemas de seguridad" señala indicios de que tu sitio se ha visto atacado o se comporta de forma potencialmente peligrosa para los visitantes o sus ordenadores, como los ataques de suplantación de identidad o la instalación de malware o software no deseado en el ordenador del usuario. Es posible que estas páginas figuren con etiquetas de advertencia en los resultados de búsqueda o que un navegador muestre una página de advertencia intersticial cuando el usuario quiera visitarlas.
+

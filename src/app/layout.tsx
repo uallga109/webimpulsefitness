@@ -16,13 +16,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     template: "%s | Impulse Fitness",
-    default: "Impulse Fitness | El mayor buscador fitness y nutrición",
+    default: "Impulse Fitness | Marketing de Élite y Ciencias del Deporte",
   },
   description:
-    "Plataforma líder en fitness: encuentra gimnasios, rutinas de entrenamiento, dietas personalizadas y suplementación basada en evidencia científica.",
+    "Plataforma premium de marketing digital para gimnasios y entrenadores, con herramientas de biomecánica, nutrición y rendimiento basadas en evidencia científica.",
   keywords: [
-    "fitness",
-    "gimnasios",
+    "fitness B2B",
+    "marketing para gimnasios",
+    "marketing entrenadores",
     "rutinas casa",
     "suplementos deportivos",
     "calculadora calorías",
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Impulse Fitness Team" }],
   openGraph: {
-    title: "Impulse Fitness | Modern Wellness Platform",
-    description: "Tu guía definitiva para el entrenamiento y la salud.",
+    title: "Impulse Fitness | Premium B2B & Science-Based Wellness",
+    description: "Ecosistema B2B de crecimiento fitness y nutrición científica.",
     url: "https://impulsefitnessmarketing.com",
     siteName: "Impulse Fitness",
     locale: "es_ES",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Impulse Fitness",
-    description: "El mayor buscador fitness del mercado.",
+    description: "Ecosistema B2B de crecimiento fitness y nutrición científica.",
   },
   robots: {
     index: true,

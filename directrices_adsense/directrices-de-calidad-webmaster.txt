@@ -1,0 +1,11 @@
+Políticas de spam de la Búsqueda web de Google
+No debe:
+Incluir anuncios servidos por Google en pantallas que infrinjan las políticas de spam de la Búsqueda web de Google.
+Consejos sobre las políticas de spam en la Búsqueda web de Google
+Para que tanto los usuarios como los anunciantes puedan disfrutar de una buena experiencia, los editores de Google deben cumplir las políticas de spam de la Búsqueda web de Google. Seguir estas políticas le ayudará a evitar que los usuarios tengan experiencias negativas y a reducir las probabilidades de confundir a los anunciantes. Estas políticas son muy extensas, así que hemos resumido la información más importante a continuación:
+No haga un uso innecesario ni repetitivo de las palabras clave, ya que no añaden valor al sitio.
+Sus sitios no deben afirmar que ofrecen contenido o servicios que no tienen.
+No cree páginas puerta diseñadas exclusivamente para buscadores ni otros métodos "plantilla", como programas de afiliados con poco o ningún contenido original.
+Tenga en cuenta que la participación en programas de publicidad de Google no afecta a la clasificación de un sitio en los resultados de búsqueda de Google y no asegura que los robots de nuestro índice principal rastreen sus páginas. Recomendamos a los editores que quieran mejorar su clasificación en los resultados de búsqueda que consulten las Directrices básicas de la Búsqueda de Google y Search Console, que están disponibles para todos los editores.
+Es posible que los sitios que infringen las políticas de spam para la Búsqueda web de Google no se muestren en los resultados de búsqueda de Google, así como que no se sirvan anuncios de Google en ellos de acuerdo con esta política. Si alguno de sus sitios ha infringido estas políticas, puede modificarlo para que las cumpla y, después, enviarlo para que se vuelva a revisar.
+

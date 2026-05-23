@@ -24,18 +24,18 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
-              title: "Gimnasios y Centros",
-              desc: "Encuentra instalaciones de musculación, CrossFit, boutique y artes marciales.",
-              href: "/gimnasios/buscador",
-              linkText: "Buscar gimnasios",
+              title: "Marketing para Gimnasios",
+              desc: "Estrategias B2B de captación y fidelización de socios para rentabilizar tu centro deportivo.",
+              href: "/gimnasios/marketing",
+              linkText: "Crecer mi centro",
               bgColor: "bg-blue-50",
               textColor: "text-[#2563EB]",
             },
             {
-              title: "Entrenadores Personales",
-              desc: "Profesionales cualificados para guiar tu recomposición corporal o rendimiento.",
-              href: "/entrenadores/buscador",
-              linkText: "Ver entrenadores",
+              title: "Marketing para Entrenadores",
+              desc: "Impulsa tu marca personal, automatiza cobros y escala tus asesorías online de alto valor.",
+              href: "/entrenadores/marketing",
+              linkText: "Escalar mi marca",
               bgColor: "bg-green-50",
               textColor: "text-[#22C55E]",
             },
@@ -90,10 +90,10 @@ export default function HomePage() {
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-gray-200 pb-4">
           <h2 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">
-            Ciudades Populares
+            Mercados de Alta Competencia
           </h2>
           <p className="text-sm text-gray-500 mt-1 sm:mt-0">
-            Los mayores núcleos de entrenamiento en España
+            Zonas urbanas clave donde implementamos estrategias de SEO Local
           </p>
         </div>
 
@@ -102,36 +102,36 @@ export default function HomePage() {
           {[
             {
               city: "Madrid",
-              count: "1.204 gimnasios",
-              trainers: "840 entrenadores",
+              count: "+1.200 centros",
+              trainers: "Competencia Muy Alta",
               hue: "from-blue-500/20 to-blue-600/40",
               svgBg: "#2563EB",
             },
             {
               city: "Barcelona",
-              count: "980 gimnasios",
-              trainers: "650 entrenadores",
+              count: "+900 centros",
+              trainers: "Competencia Muy Alta",
               hue: "from-green-500/20 to-green-600/40",
               svgBg: "#22C55E",
             },
             {
               city: "Valencia",
-              count: "450 gimnasios",
-              trainers: "320 entrenadores",
+              count: "+400 centros",
+              trainers: "Competencia Alta",
               hue: "from-amber-500/20 to-amber-600/40",
               svgBg: "#F59E0B",
             },
             {
               city: "Sevilla",
-              count: "390 gimnasios",
-              trainers: "280 entrenadores",
+              count: "+300 centros",
+              trainers: "Competencia Alta",
               hue: "from-purple-500/20 to-purple-600/40",
               svgBg: "#8B5CF6",
             },
           ].map((item, idx) => (
             <Link
               key={idx}
-              href={`/gimnasios/buscador?q=${item.city.toLowerCase()}`}
+              href="/gimnasios/marketing/seo-local"
               className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col block"
             >
               {/* Imagen arriba (Representación gráfica vectorial limpia para máxima fiabilidad y carga instantánea) */}
@@ -164,16 +164,16 @@ export default function HomePage() {
                       <span>{item.count}</span>
                     </p>
                     <p className="text-sm text-gray-500 flex items-center space-x-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
                       <span>{item.trainers}</span>
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-gray-400">Directorio B2C</span>
+                  <span className="text-xs font-semibold text-gray-400">Estrategia B2B</span>
                   <span className="text-xs font-bold text-[#2563EB] group-hover:translate-x-1 transition-transform">
-                    Ver centros →
+                    Dominar mapa →
                   </span>
                 </div>
               </div>

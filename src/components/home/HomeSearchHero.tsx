@@ -9,9 +9,22 @@ export default function HomeSearchHero() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!searchQuery.trim()) return;
-    // Redirección con cambio de URL para SEO programático
-    router.push(`/gimnasios/buscador?q=${encodeURIComponent(searchQuery.trim())}`);
+    const q = searchQuery.trim().toLowerCase();
+    if (!q) return;
+
+    if (q.includes("gim") || q.includes("centr") || q.includes("club") || q.includes("local")) {
+      router.push(`/gimnasios/marketing`);
+    } else if (q.includes("entren") || q.includes("coach") || q.includes("person") || q.includes("marca")) {
+      router.push(`/entrenadores/marketing`);
+    } else if (q.includes("calor") || q.includes("macro") || q.includes("diet") || q.includes("prote") || q.includes("nutri")) {
+      router.push(`/dietas`);
+    } else if (q.includes("rutin") || q.includes("ejercic") || q.includes("crossfit") || q.includes("fuerz") || q.includes("hipertrofia") || q.includes("pecho") || q.includes("espalda")) {
+      router.push(`/rutinas`);
+    } else if (q.includes("suple") || q.includes("crea") || q.includes("whey") || q.includes("proteina")) {
+      router.push(`/suplementos`);
+    } else {
+      router.push(`/herramientas`);
+    }
   };
 
   return (

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Marketing para Gimnasios y Centros Deportivos | Impulse Fitness",
+  title: "Marketing Estratégico y Captación para Gimnasios | Impulse Fitness B2B",
   description:
-    "Sistemas automatizados de captación, retención predictiva, posicionamiento SEO local y maximización del ticket medio para rentabilizar tu centro deportivo.",
+    "Sistemas automatizados de captación local, retención predictiva de socios, posicionamiento SEO local y optimización del LTV para rentabilizar tu centro deportivo.",
 };
 
 export default function MarketingGimnasiosPage() {
@@ -21,7 +21,7 @@ export default function MarketingGimnasiosPage() {
           <span className="text-[#111827] font-bold">Soluciones B2B</span>
         </nav>
 
-        {/* 1. Upgrade de la Cabecera (Hero Section a dos columnas con Imagen) */}
+        {/* 1. Cabecera Hero Section */}
         <header className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-gray-100 pb-10">
           {/* Izquierda (Texto ampliado) */}
           <div className="lg:col-span-7 flex flex-col justify-center">
@@ -29,17 +29,17 @@ export default function MarketingGimnasiosPage() {
               <span>B2B Growth Ecosystem</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight leading-tight">
-              Marketing para Gimnasios y Centros Deportivos
+              Sistemas de Marketing de Alto Impacto para Gimnasios
             </h1>
             <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
-              Sistemas automatizados de captación y fidelización diseñados específicamente para rentabilizar metros cuadrados e instalaciones deportivas. Deja de competir por precio y empieza a dominar tu zona de influencia con datos reales.
+              Deja de competir por precio o depender de la estacionalidad de septiembre y enero. Implementamos ecosistemas automatizados de captación local y retención predictiva diseñados específicamente para optimizar la rentabilidad de cada metro cuadrado de tu instalación.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
-                href="#consultoria"
+                href="/gimnasios/marketing/calculadora-roi"
                 className="px-6 py-3 rounded-xl bg-[#2563EB] text-white text-sm font-bold hover:bg-blue-700 transition-all shadow-sm"
               >
-                Agendar consultoría
+                Probar Calculadora de ROI
               </Link>
               <Link
                 href="#soluciones"
@@ -50,20 +50,16 @@ export default function MarketingGimnasiosPage() {
             </div>
           </div>
 
-          {/* Derecha (Imagen que transmite tecnología y fitness) */}
+          {/* Derecha (Imagen) */}
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-xl shadow-blue-900/5 aspect-[4/3] w-full group bg-gray-50">
-              <img
-                src="/images/gimnasios/hero-gym-marketing.jpg"
-                alt="Dashboard de analíticas y marketing para dueños de gimnasios"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-95"
-              />
-              {/* Overlay sutil para garantizar un acabado ultra premium */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#111827]/10 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-[#2563EB]/10 flex items-center justify-center text-6xl">
+                📊
+              </div>
               <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3 rounded-2xl border border-white/20 shadow-sm flex items-center space-x-3">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#22C55E] animate-pulse shrink-0" />
                 <p className="text-xs font-bold text-[#111827] truncate">
-                  Control en tiempo real de CPA y LTV
+                  Análisis y Modelado de CAC & LTV en tiempo real
                 </p>
               </div>
             </div>
@@ -71,14 +67,14 @@ export default function MarketingGimnasiosPage() {
         </header>
       </div>
 
-      {/* 2. Los 4 Pilares de Soluciones en Tarjetas (Cards) */}
+      {/* 2. Los 4 Pilares de Soluciones */}
       <section id="soluciones" className="space-y-6 pt-2">
         <div>
-          <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest">
-            Metodología Integral
+          <h2 className="text-xs font-black text-gray-400 uppercase tracking-widest">
+            Metodología de Crecimiento
           </h2>
           <p className="text-xl sm:text-2xl font-black text-[#111827] mt-1 tracking-tight">
-            Los 4 pilares del crecimiento B2B
+            Los 4 Pilares Estratégicos del Éxito Fitness
           </p>
         </div>
 
@@ -86,28 +82,28 @@ export default function MarketingGimnasiosPage() {
           {[
             {
               title: "Captación de Leads Automatizada",
-              desc: "Embudos de conversión con pases de prueba gratuitos de 1 día integrados directamente con tu software de control de accesos.",
+              desc: "Embudos digitales con Meta Ads y TikTok Ads segmentados localmente y secuencias automatizadas de WhatsApp/Email para multiplicar visitas.",
               tag: "Adquisición",
               tagBg: "bg-blue-50 text-[#2563EB]",
               href: "/gimnasios/marketing/captacion",
             },
             {
               title: "Sistemas de Retención Predictiva",
-              desc: "Análisis de asistencia mediante inteligencia artificial para detectar patrones de abandono y enviar ofertas automáticas antes de la baja.",
+              desc: "Modelos de control de abandono para identificar patrones de inasistencia antes de que se formalice la baja, reactivando socios a tiempo.",
               tag: "Fidelización",
               tagBg: "bg-green-50 text-[#22C55E]",
               href: "/gimnasios/marketing/fidelizacion",
             },
             {
               title: "Posicionamiento SEO Local",
-              desc: "Domina las intenciones de búsqueda en Google Maps para aparecer siempre como la primera opción en tu código postal o barrio.",
+              desc: "Optimización On-Page y SEO Off-Page en Google Maps para dominar de forma absoluta las búsquedas de tu código postal y zona de influencia.",
               tag: "Visibilidad",
               tagBg: "bg-purple-50 text-purple-600",
               href: "/gimnasios/marketing/seo-local",
             },
             {
               title: "Maximización del Ticket Medio",
-              desc: "Embudos de upselling automatizados dentro de tu app o email para vender sesiones de entrenamiento personal, suplementación y upgrades.",
+              desc: "Embudos de upselling y venta cruzada de entrenamiento personal, retos corporativos, nutrición y suplementos integrados.",
               tag: "Rentabilidad",
               tagBg: "bg-amber-50 text-amber-600",
               href: "/gimnasios/marketing/rentabilidad",
@@ -134,7 +130,7 @@ export default function MarketingGimnasiosPage() {
                   href={sol.href}
                   className="text-xs sm:text-sm font-bold text-[#2563EB] hover:text-blue-700 flex items-center space-x-1 transition-colors"
                 >
-                  <span>Ver en detalle</span>
+                  <span>Ver estrategia completa</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
               </div>
@@ -143,7 +139,52 @@ export default function MarketingGimnasiosPage() {
         </div>
       </section>
 
-      {/* 3. Nueva Sección: Banda de Autoridad (Social Proof) */}
+      {/* 3. Recursos y Herramientas Destacadas */}
+      <section className="bg-gray-50 rounded-3xl border border-gray-200 p-8 sm:p-10 space-y-6">
+        <div>
+          <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-wider">
+            Recursos Premium Gratuitos
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-black text-[#111827] mt-3">
+            Herramientas Interactivas y Playbooks de Negocio
+          </h2>
+          <p className="text-base text-gray-600 mt-2">
+            Ponemos a tu disposición tecnología interactiva y guías tácticas redactadas por expertos en crecimiento fitness para ayudarte a auditar tus propias campañas de marketing.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-xs flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-[#111827]">Calculadora de ROI y CAC/LTV</h3>
+              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                Nuestra calculadora interactiva B2B te permite conocer la relación exacta entre el coste de adquisición (CAC) y el valor de vida (LTV) de tus socios para auditar la rentabilidad real de tus campañas.
+              </p>
+            </div>
+            <div className="mt-6">
+              <Link href="/gimnasios/marketing/calculadora-roi" className="text-sm font-black text-[#2563EB] hover:underline">
+                Acceder a la calculadora →
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-xs flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-[#111827]">Plantillas Copywriting para Anuncios</h3>
+              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                Playbook completo con guiones y copys directos optimizados para campañas locales de gimnasios en Instagram y TikTok, secuencias de recordatorio por WhatsApp y emails de retención.
+              </p>
+            </div>
+            <div className="mt-6">
+              <Link href="/gimnasios/marketing/plantillas-copywriting" className="text-sm font-black text-[#2563EB] hover:underline">
+                Descargar plantillas →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Banda de Autoridad (Social Proof) */}
       <section className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
         <div className="text-center max-w-xl mx-auto mb-6">
           <p className="text-xs font-bold text-[#2563EB] uppercase tracking-widest">
@@ -163,7 +204,7 @@ export default function MarketingGimnasiosPage() {
               Coste de Adquisición (CPA)
             </span>
             <p className="text-xs text-gray-500 mt-1 max-w-xs">
-              Optimización del presupuesto en canales de captación digital.
+              Optimización del presupuesto en canales de captación digital y menor dependencia de promociones agresivas.
             </p>
           </div>
 
@@ -175,7 +216,7 @@ export default function MarketingGimnasiosPage() {
               Retención primeros 90 días
             </span>
             <p className="text-xs text-gray-500 mt-1 max-w-xs">
-              Fidelización temprana en el periodo más crítico del socio.
+              Fidelización temprana en el periodo más crítico mediante flujos de onboarding dinámicos y análisis de uso.
             </p>
           </div>
 
@@ -187,31 +228,30 @@ export default function MarketingGimnasiosPage() {
               Trazabilidad total
             </span>
             <p className="text-xs text-gray-500 mt-1 max-w-xs">
-              Desde el clic inicial del anuncio hasta el torno de acceso físico.
+              Integración nativa con tu software CRM para seguir cada euro invertido en anuncios hasta su conversión física.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 4. El Call to Action Final (Bloque gris oscuro premium) */}
+      {/* 5. El Call to Action Final */}
       <section id="consultoria" className="bg-[#111827] text-white rounded-3xl p-8 sm:p-10 text-center max-w-4xl mx-auto w-full shadow-xl relative overflow-hidden">
-        {/* Elemento de diseño de fondo sutil */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10">
           <span className="px-3 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider">
-            Impulse B2B Partnership
+            Impulse Growth Partnership
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-white mt-4 tracking-tight">
-            ¿Gestionas una cadena o un centro independiente?
+            ¿Gestionas una cadena o un centro deportivo independiente?
           </h2>
           <p className="mt-3 text-base sm:text-lg text-gray-300 max-w-xl mx-auto leading-relaxed">
-            Hablemos sobre cómo integrar tu inventario de pases en nuestro directorio B2C para recibir visitas recurrentes sin coste fijo por alta.
+            Analicemos juntos tu embudo actual de ventas y tus campañas locales. Te ayudaremos a diseñar un flujo de trabajo digital personalizado sin compromisos.
           </p>
           <div className="mt-8">
             <button className="px-8 py-3.5 rounded-xl bg-[#2563EB] hover:bg-blue-600 text-white font-bold text-sm sm:text-base transition-all shadow-lg shadow-blue-500/20 active:scale-95">
-              Agendar consultoría gratuita
+              Solicitar Auditoría de Marketing Gratuita
             </button>
           </div>
           <p className="mt-4 text-xs text-gray-500">

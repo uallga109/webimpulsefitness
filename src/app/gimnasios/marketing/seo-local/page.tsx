@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Posicionamiento SEO Local para Gimnasios | Impulse Fitness",
+  title: "Posicionamiento SEO Local y Google Maps para Gimnasios | Impulse Fitness",
   description:
-    "Auditoría y optimización de perfiles en Google Business, captación de reseñas de 5 estrellas automatizada y SEO On-Page local para centros deportivos.",
+    "Estrategia B2B avanzada de SEO Local para centros deportivos: posicionamiento en Google Maps, optimización de fichas de Google Business, NAP y reseñas automáticas.",
 };
 
 export default function SeoLocalMarketingPage() {
@@ -30,23 +30,53 @@ export default function SeoLocalMarketingPage() {
             Dominio Absoluto en Google Maps
           </h1>
           <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
-            El 80% de los usuarios eligen su gimnasio buscando "gimnasio cerca de mí" en su móvil. Si no estás entre los 3 primeros resultados, estás perdiendo dinero todos los días.
+            El 80% de los usuarios eligen su gimnasio buscando "gimnasio cerca de mí" en su teléfono móvil. Si tu centro deportivo no aparece entre los 3 primeros resultados (el Google Local Pack), estás entregando clientes potenciales a tu competencia directa a diario.
           </p>
         </header>
       </div>
 
-      {/* Bloque de Características (3 columnas con mucho espacio en blanco) */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
+      {/* Sección 1: Factores de Ranking de SEO Local */}
+      <section className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 space-y-4">
+        <h2 className="text-2xl font-black text-[#111827]">¿Cómo decide Google el posicionamiento local?</h2>
+        <p className="text-base text-gray-600 leading-relaxed">
+          Google Maps utiliza tres factores principales para decidir qué gimnasios clasificar en las primeras posiciones: **Relevancia** (coincidencia con la intención de búsqueda), **Distancia** (cercanía física al usuario) y **Prominencia** (autoridad online, enlaces, reseñas y consistencia de datos).
+        </p>
+
+        <div className="overflow-x-auto rounded-2xl border border-gray-100 bg-gray-50 p-6">
+          <h3 className="text-lg font-bold text-[#111827] mb-4">Checklist Técnico de Optimización SEO Local</h3>
+          <ul className="space-y-3 text-sm sm:text-base text-gray-600">
+            <li className="flex items-start space-x-2.5">
+              <span className="text-[#2563EB] font-bold">✔</span>
+              <span><strong>Consistencia NAP:</strong> Asegurar que el Nombre, Dirección y Teléfono (Name, Address, Phone) sean exactamente idénticos en tu web, Google Maps, Facebook y directorios locales.</span>
+            </li>
+            <li className="flex items-start space-x-2.5">
+              <span className="text-[#2563EB] font-bold">✔</span>
+              <span><strong>Categorización Precisa:</strong> Elegir como categoría principal "Gimnasio", "Centro de fitness" o "Estudio de pilates" e incorporar categorías secundarias correctas.</span>
+            </li>
+            <li className="flex items-start space-x-2.5">
+              <span className="text-[#2563EB] font-bold">✔</span>
+              <span><strong>Geo-etiquetado de Imágenes:</strong> Subir fotografías semanales de alta calidad de tu sala de musculación, equipamiento premium y clases dirigidas, etiquetadas geográficamente.</span>
+            </li>
+            <li className="flex items-start space-x-2.5">
+              <span className="text-[#2563EB] font-bold">✔</span>
+              <span><strong>Reseñas Frecuentes:</strong> Mantener un flujo de reseñas continuas con palabras clave semánticas del deporte (ej. <em>"entrenador personal", "CrossFit", "rutina de empuje"</em>).</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Sección 2: La Metodología SEO en 3 Pasos */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm flex flex-col justify-between">
           <div>
             <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-black mb-6">
               01
             </div>
             <h3 className="text-lg font-black text-[#111827]">
-              Optimización de Ficha de Google
+              Optimización Técnica Ficha
             </h3>
             <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-              Auditoría y mejora técnica de tu perfil de Google Business para superar a tu competencia directa.
+              Auditoría y reestructuración completa de tu perfil en Google Business Profile. Optimizamos títulos, descripciones y respuestas a preguntas frecuentes (FAQ) para maximizar la relevancia en búsquedas transaccionales.
             </p>
           </div>
         </div>
@@ -57,10 +87,10 @@ export default function SeoLocalMarketingPage() {
               02
             </div>
             <h3 className="text-lg font-black text-[#111827]">
-              Máquina de Reseñas 5 Estrellas
+              Máquina de Reseñas de 5 Estrellas
             </h3>
             <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-              Sistema automático que pide valoraciones positivas a tus socios más fieles y filtra las quejas hacia un buzón privado.
+              Instalamos sistemas interactivos (código QR en recepción y automatizaciones de WhatsApp) que solicitan opiniones de 5 estrellas exclusivamente a tus socios más leales y satisfechos.
             </p>
           </div>
         </div>
@@ -71,30 +101,51 @@ export default function SeoLocalMarketingPage() {
               03
             </div>
             <h3 className="text-lg font-black text-[#111827]">
-              SEO On-Page para Centros
+              SEO On-Page Localizado
             </h3>
             <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-              Creación de páginas de aterrizaje locales optimizadas para las disciplinas que ofreces (CrossFit, Pilates, Musculación).
+              Creamos landing pages locales súper optimizadas con etiquetas de geolocalización y datos estructurados Schema.org. Logramos que aparezcas tanto en Google Maps como en los resultados orgánicos del buscador.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CTA Dedicado */}
-      <section className="bg-gray-50 rounded-3xl border border-gray-100 p-8 sm:p-12 text-center max-w-3xl mx-auto w-full mt-6">
-        <h2 className="text-xl sm:text-2xl font-black text-[#111827]">
-          ¿Quieres multiplicar tus visitas sin pagar por clics?
-        </h2>
-        <p className="mt-2 text-sm sm:text-base text-gray-600 max-w-lg mx-auto">
-          Posiciona tu centro en el codiciado Local Pack de Google y captura toda la demanda activa de tu área geográfica.
+      {/* Sección 3: Ejemplo Práctico de Estructura de Landing Page Local */}
+      <section className="bg-purple-50/50 rounded-3xl border border-purple-100 p-8 sm:p-10 space-y-4">
+        <h2 className="text-2xl font-black text-[#111827]">Estructura On-Page de Alta Conversión para Centros</h2>
+        <p className="text-base text-gray-600 leading-relaxed">
+          Tener una buena landing local con marcado semántico ayuda a que el robot de Google entienda que tu negocio físico posee relevancia geográfica real:
         </p>
-        <div className="mt-8">
+
+        <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-xs space-y-3 text-sm font-mono text-gray-700">
+          <div><strong>Tag H1:</strong> Gimnasio en [Nombre de tu Barrio/Ciudad] | [Nombre de tu Centro]</div>
+          <div><strong>Tag H2:</strong> Entrenamientos de Fuerza y Clases Dirigidas en [Zona/Barrio]</div>
+          <div><strong>Integración Schema:</strong> LocalBusiness JSON-LD estructurado (Dirección, Teléfono, Latitud, Longitud).</div>
+          <div><strong>Embed Google Map:</strong> Mapa oficial incrustado para validar la ubicación real frente a Googlebot.</div>
+        </div>
+      </section>
+
+      {/* CTA Dedicado */}
+      <section className="bg-[#111827] text-white rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto w-full shadow-lg relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/10 rounded-full blur-2xl pointer-events-none" />
+        <h2 className="text-2xl sm:text-3xl font-black text-white">
+          ¿Quieres dominar las búsquedas de tu zona?
+        </h2>
+        <p className="mt-2 text-sm sm:text-base text-gray-300 max-w-lg mx-auto">
+          Prueba nuestras calculadoras interactivas de ROI para estimar las visitas orgánicas o agenda una auditoría SEO gratuita.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link
+            href="/gimnasios/marketing/calculadora-roi"
+            className="px-6 py-3 rounded-xl bg-white text-[#111827] font-bold text-sm transition-all hover:bg-gray-100"
+          >
+            Calcular Retorno de Visitas
+          </Link>
           <Link
             href="/gimnasios/marketing#consultoria"
-            className="inline-flex items-center space-x-2 px-8 py-4 rounded-xl bg-[#2563EB] hover:bg-blue-700 text-white font-bold text-sm sm:text-base transition-all shadow-md shadow-blue-100 active:scale-95"
+            className="px-6 py-3 rounded-xl bg-[#2563EB] hover:bg-blue-600 text-white font-bold text-sm transition-all"
           >
-            <span>Quiero dominar mi zona</span>
-            <span>→</span>
+            Quiero dominar mi zona local →
           </Link>
         </div>
       </section>
