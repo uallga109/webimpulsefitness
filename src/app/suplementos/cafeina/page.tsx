@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Cafeína Anhidra: Dosis Pre-Entreno, Rendimiento y Grasa Corporal",
   description: "Aprende cómo usar la cafeína anhidra para disparar tu rendimiento deportivo, fuerza y quemar grasa. Guía científica de dosis, tolerancia y metabolismo.",
-  keywords: ["cafeina pre entreno", "cafeina rendimiento deportivo", "pastillas de cafeina dosis", "cafeina y quemar grasa", "cafeina anhidra", "receptores de adenosina"],
 };
 
 export default function CafeinaPage() {

@@ -6,16 +6,6 @@ export const metadata: Metadata = {
   title: "Eleiko Sport | Barras de Halterofilia y Powerlifting de Élite",
   description:
     "Descubre la historia, tecnología y catálogo oficial de Eleiko Sport en España. Barras olímpicas certificadas por IWF e IPF, discos calibrados y plataformas SVR.",
-  keywords: [
-    "eleiko sport españa",
-    "barra halterofilia oficial iwf",
-    "barra powerlifting homologada ipf",
-    "acero sueco eleiko steel precio",
-    "discos bumpers competicion",
-    "plataformas svr eleiko ruido",
-    "comprar material de fuerza sueco",
-    "records del mundo halterofilia eleiko",
-  ],
 };
 
 export default function EleikoPage() {

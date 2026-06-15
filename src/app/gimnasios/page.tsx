@@ -3,167 +3,194 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Soluciones de Crecimiento y Marketing para Gimnasios | Impulse Fitness",
+  title: "Gym Marketing: Soluciones de Crecimiento para Gimnasios | Impulse Fitness",
   description:
-    "Portal B2B de crecimiento para centros deportivos. Descubre estrategias de captación, retención predictiva, calculadoras de ROI y plantillas de copywriting.",
+    "Portal B2B definitivo de crecimiento para centros deportivos. Descubre estrategias de captación, retención predictiva, SEO local, calculadora de ROI y plantillas de copywriting.",
 };
 
 export default function GimnasiosPage() {
   return (
-    <div className="flex flex-col space-y-12 animate-fadeIn">
+    <div className="flex flex-col space-y-12 animate-fadeIn mb-12">
       {/* Cabecera grande y premium */}
-      <header className="border-b border-gray-200 pb-8">
-        <div className="inline-flex items-center space-x-2 text-xs font-black text-[#2563EB] uppercase tracking-wider mb-2">
-          <span>Área Corporativa B2B</span>
-          <span>•</span>
-          <span>Sistemas de Crecimiento</span>
+      <header className="relative w-full rounded-3xl overflow-hidden shadow-lg bg-white border border-slate-200 p-8 sm:p-12 md:p-14 flex flex-col justify-center min-h-[300px]">
+        <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 left-10 w-[250px] h-[250px] bg-indigo-500/5 rounded-full blur-[80px] pointer-events-none" />
+
+        <div className="relative z-10 max-w-4xl space-y-4">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 text-[#2563EB] text-xs font-black uppercase tracking-wider border border-blue-200/60 shadow-sm">
+            <span>🏢 Área B2B Corporativa</span>
+            <span>•</span>
+            <span>Ecosistema de Crecimiento</span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+            Gym Marketing <br className="hidden sm:inline" />
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              Sistemas de Crecimiento
+            </span>
+          </h1>
+          <p className="text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed font-medium">
+            Diseñamos soluciones tecnológicas y de marketing estratégico específicamente para propietarios de centros deportivos, boxes de CrossFit y estudios boutique. Domina tu zona local, optimiza tus métricas de adquisición y escala tu facturación con metodologías probadas.
+          </p>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111827] tracking-tight">
-          Crecimiento y Marketing para Gimnasios
-        </h1>
-        <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-3xl leading-relaxed">
-          Diseñamos soluciones tecnológicas y de marketing estratégico específicamente para propietarios de centros deportivos, boxes de CrossFit y estudios boutique. Domina tu zona local, optimiza tus métricas financieras y escala tu número de socios activos con base científica.
-        </p>
       </header>
 
-      {/* Grid de Soluciones e Instrumental B2B */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Card 1: 4 Pilares de Marketing */}
-        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div className="h-40 w-full rounded-2xl bg-blue-50 flex items-center justify-center mb-6 border border-blue-100">
-              <span className="text-4xl">📈</span>
-            </div>
-            <h2 className="text-2xl font-black text-[#111827]">
-              Los 4 Pilares del Crecimiento
-            </h2>
-            <p className="mt-3 text-base text-gray-600 leading-relaxed">
-              Descubre nuestra metodología completa que cubre la captación omnicanal de leads, sistemas de retención automatizados con inteligencia artificial, SEO local en Google Maps y optimización del ticket medio.
-            </p>
-          </div>
-          
-          <div className="mt-8 pt-4 border-t border-gray-100">
-            <Link
-              href="/gimnasios/marketing"
-              className="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl bg-[#2563EB] hover:bg-blue-700 text-white font-bold text-base transition-colors shadow-sm"
-            >
-              Explorar Metodología B2B →
-            </Link>
-          </div>
-        </article>
+      {/* Grid de Pilares de Negocio */}
+      <section className="space-y-6">
+        <div className="border-b border-gray-200 pb-4">
+          <h2 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">
+            Los 4 Pilares del Marketing B2B
+          </h2>
+          <p className="text-sm text-gray-500 mt-1">
+            Metodologías estructuradas para escalar tu centro deportivo
+          </p>
+        </div>
 
-        {/* Card 2: Calculadora Interactiva de ROI */}
-        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              title: "Captación de Leads",
+              desc: "Embudos de Meta/TikTok Ads y secuencias de WhatsApp para maximizar visitas.",
+              tag: "Pilar 1",
+              bgColor: "bg-blue-50 text-blue-600 border border-blue-200",
+              href: "/gimnasios/marketing/captacion",
+            },
+            {
+              title: "Retención Predictiva",
+              desc: "Modelos de control para re-activar socios ausentes antes de solicitar su baja.",
+              tag: "Pilar 2",
+              bgColor: "bg-green-50 text-green-600 border border-green-200",
+              href: "/gimnasios/marketing/fidelizacion",
+            },
+            {
+              title: "SEO Local & Google Maps",
+              desc: "Dominancia del local pack en tu código postal para captar búsquedas de proximidad.",
+              tag: "Pilar 3",
+              bgColor: "bg-purple-50 text-purple-600 border border-purple-200",
+              href: "/gimnasios/marketing/seo-local",
+            },
+            {
+              title: "Ticket Medio (LTV)",
+              desc: "Embudos de upselling aplicados a nutrición, retos y asesorías personalizadas.",
+              tag: "Pilar 4",
+              bgColor: "bg-amber-50 text-amber-600 border border-amber-200",
+              href: "/gimnasios/marketing/rentabilidad",
+            },
+          ].map((item, idx) => (
+            <article key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div className="space-y-4">
+                <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider ${item.bgColor}`}>
+                  {item.tag}
+                </span>
+                <h3 className="text-lg font-bold text-[#111827]">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed font-medium">{item.desc}</p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <Link href={item.href} className="text-sm font-bold text-[#2563EB] hover:underline inline-flex items-center space-x-1">
+                  <span>Ver Estrategia</span>
+                  <span>→</span>
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Grid de Herramientas Interactivas y Copywriting */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Calculadora de ROI */}
+        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between group">
           <div>
             <div className="h-40 w-full rounded-2xl bg-green-50 flex items-center justify-center mb-6 border border-green-100">
-              <span className="text-4xl">📊</span>
+              <span className="text-5xl transform group-hover:scale-110 transition-transform duration-300">📊</span>
             </div>
             <h2 className="text-2xl font-black text-[#111827]">
               Calculadora de ROI y Métricas
             </h2>
-            <p className="mt-3 text-base text-gray-600 leading-relaxed">
-              Mide la salud financiera de tu centro. Introduce tus presupuestos publicitarios, coste de adquisición por socio (CAC), Lifetime Value (LTV) y tasa de abandono (Churn) para estimar tu retorno real de inversión.
+            <p className="mt-3 text-base text-gray-600 leading-relaxed font-medium">
+              Audita tus presupuestos de marketing y campañas digitales. Introduce tus costes por lead (CPL), ratios de cierre de ventas, costes de adquisición por socio (CAC) y Lifetime Value (LTV) para estimar tu retorno neto.
             </p>
           </div>
           
           <div className="mt-8 pt-4 border-t border-gray-100">
             <Link
               href="/gimnasios/marketing/calculadora-roi"
-              className="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl bg-gray-50 hover:bg-gray-100 text-[#2563EB] font-bold text-base border border-gray-200 transition-colors"
+              className="inline-flex items-center justify-center w-full px-6 py-3.5 rounded-xl bg-[#2563EB] hover:bg-blue-700 text-white font-bold text-base transition-colors shadow-sm"
             >
-              Calcular ROI de Marketing →
+              Iniciar Calculadora de ROI →
             </Link>
           </div>
         </article>
 
-        {/* Card 3: Plantillas de Copywriting Directo */}
-        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between">
+        {/* Plantillas de Copywriting */}
+        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between group">
           <div>
             <div className="h-40 w-full rounded-2xl bg-amber-50 flex items-center justify-center mb-6 border border-amber-100">
-              <span className="text-4xl">✍️</span>
+              <span className="text-5xl transform group-hover:scale-110 transition-transform duration-300">✍️</span>
             </div>
             <h2 className="text-2xl font-black text-[#111827]">
-              Plantillas & Playbooks de Copy
+              Plantillas de Copywriting para Anuncios
             </h2>
-            <p className="mt-3 text-base text-gray-600 leading-relaxed">
-              Ahorra decenas de horas de redacción. Accede a nuestros textos publicitarios de alto impacto listos para copiar y pegar en Meta Ads (Facebook/Instagram), TikTok Ads, y guiones de WhatsApp de alta conversión.
+            <p className="mt-3 text-base text-gray-600 leading-relaxed font-medium">
+              Ahorra tiempo de redacción y aumenta tu conversión. Accede a copys y scripts de anuncios optimizados y listos para usar en Instagram Ads, TikTok Ads, secuencias de correo y guiones de mensajería de WhatsApp.
             </p>
           </div>
           
           <div className="mt-8 pt-4 border-t border-gray-100">
             <Link
               href="/gimnasios/marketing/plantillas-copywriting"
-              className="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl bg-gray-50 hover:bg-gray-100 text-[#2563EB] font-bold text-base border border-gray-200 transition-colors"
+              className="inline-flex items-center justify-center w-full px-6 py-3.5 rounded-xl bg-gray-50 hover:bg-gray-100 text-[#2563EB] font-bold text-base border border-gray-200 transition-colors"
             >
-              Ver Plantillas Gratuitas →
-            </Link>
-          </div>
-        </article>
-
-        {/* Card 4: SEO Local y Dominancia de Mapas */}
-        <article className="bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-all p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div className="h-40 w-full rounded-2xl bg-purple-50 flex items-center justify-center mb-6 border border-purple-100">
-              <span className="text-4xl">📍</span>
-            </div>
-            <h2 className="text-2xl font-black text-[#111827]">
-              Auditoría y Posicionamiento Local
-            </h2>
-            <p className="mt-3 text-base text-gray-600 leading-relaxed">
-              El 80% de los nuevos leads buscan "gimnasio cerca de mí". Descubre cómo optimizar al máximo la ficha técnica de Google Business Profile y conseguir cientos de reseñas de 5 estrellas en piloto automático.
-            </p>
-          </div>
-          
-          <div className="mt-8 pt-4 border-t border-gray-100">
-            <Link
-              href="/gimnasios/marketing/seo-local"
-              className="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl bg-gray-50 hover:bg-gray-100 text-[#2563EB] font-bold text-base border border-gray-200 transition-colors"
-            >
-              Dominar mi Zona Local →
+              Descargar Plantillas Gratuitas →
             </Link>
           </div>
         </article>
       </section>
 
       {/* Franja de Estadísticas del Sector */}
-      <section className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+      <section className="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-sm">
         <div className="text-center max-w-xl mx-auto mb-8">
-          <p className="text-xs font-black text-[#2563EB] uppercase tracking-widest">
-            Estadísticas Clave del Mercado
+          <p className="text-xs font-black text-blue-400 uppercase tracking-widest">
+            Estadísticas Clave del Mercado Fitness
           </p>
-          <h3 className="text-xl font-bold text-[#111827] mt-1">
-            Métricas de Éxito en Negocios Fitness
+          <h3 className="text-2xl font-black text-white mt-1">
+            Métricas B2B de Centros Deportivos
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
-          <div className="pt-4 md:pt-0 px-4">
-            <span className="text-3xl font-black text-[#2563EB] block">3.5x</span>
-            <span className="text-xs font-bold text-[#111827] mt-2 block">
-              LTV a CAC Ratio Óptimo
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-800">
+          <div className="pt-4 md:pt-0 px-4 space-y-2">
+            <span className="text-3xl sm:text-4xl font-black text-[#2563EB] tracking-tight block">
+              3.5x
             </span>
-            <p className="text-xs text-gray-500 mt-1">
-              El valor de vida de un socio debe superar más de tres veces el coste de captarlo.
+            <span className="text-xs font-bold text-gray-200 uppercase tracking-wider block">
+              LTV a CAC Ratio
+            </span>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              El valor de vida de un socio debe superar por lo menos tres veces el coste de adquisición para asegurar la viabilidad comercial.
             </p>
           </div>
 
-          <div className="pt-4 md:pt-0 px-4">
-            <span className="text-3xl font-black text-[#22C55E] block">&lt; 4%</span>
-            <span className="text-xs font-bold text-[#111827] mt-2 block">
-              Churn Mensual Objetivo
+          <div className="pt-4 md:pt-0 px-4 space-y-2">
+            <span className="text-3xl sm:text-4xl font-black text-[#22C55E] tracking-tight block">
+              &lt; 4%
             </span>
-            <p className="text-xs text-gray-500 mt-1">
-              Mantener la tasa de deserción por debajo del 4% es vital para el crecimiento sostenido.
+            <span className="text-xs font-bold text-gray-200 uppercase tracking-wider block">
+              Tasa de Abandono (Churn)
+            </span>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Mantener la tasa de deserción mensual por debajo del 4% estabiliza el flujo de caja e incrementa el beneficio neto.
             </p>
           </div>
 
-          <div className="pt-4 md:pt-0 px-4">
-            <span className="text-3xl font-black text-[#111827] block">+40%</span>
-            <span className="text-xs font-bold text-[#111827] mt-2 block">
-              Impacto del SEO Local
+          <div className="pt-4 md:pt-0 px-4 space-y-2">
+            <span className="text-3xl sm:text-4xl font-black text-purple-400 tracking-tight block">
+              +40%
             </span>
-            <p className="text-xs text-gray-500 mt-1">
-              Aparición en el Local Pack 3 de Google Maps multiplica las visitas web y llamadas.
+            <span className="text-xs font-bold text-gray-200 uppercase tracking-wider block">
+              Retorno SEO Local
+            </span>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Estar en los primeros puestos del Local Pack de Google Maps aumenta un 40% las conversiones a llamada y solicitudes de ruta.
             </p>
           </div>
         </div>

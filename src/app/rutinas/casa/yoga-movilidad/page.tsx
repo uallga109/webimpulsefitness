@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Yoga y Movilidad: Longevidad Articular | Impulse Fitness",
   description: "Recupera tu rango de movimiento y elimina dolores de espalda. Rutinas de yoga y movilidad para atletas y teletrabajadores.",
-  keywords: [
-    "yoga y movilidad articular casa",
-    "ejercicios flexibilidad teletrabajo dolor",
-    "rango de movimiento articular rom",
-    "estiramientos para descompresion lumbar",
-    "posturas de yoga para principiantes",
-    "salud espinal y movilidad de cadera",
-    "relajacion sistema nervioso yoga",
-  ],
 };
 
 export default function YogaMovilidadPage() {

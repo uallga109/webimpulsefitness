@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento con Peso Corporal (Calistenia): Dominio Total | Impulse Fitness",
   description: "Aprende a dominar tu propio cuerpo. Guía biomecánica de calistenia casera, variaciones avanzadas de flexiones, sentadillas y progresiones sin material.",
-  keywords: [
-    "entrenamiento peso corporal casa",
-    "calistenia principiantes guia",
-    "sentadilla bulgara tecnica casa",
-    "flexiones arqueras biomecanica",
-    "fuerza relativa calistenia",
-    "ejercicios sin material casa",
-    "progresiones flexiones calistenia"
-  ],
 };
 
 export default function PesoCorporalPage() {

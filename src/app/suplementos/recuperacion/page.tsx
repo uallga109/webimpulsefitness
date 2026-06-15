@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Melatonina y Magnesio: Descanso Profundo, Dosis y Sueño Reparador",
   description: "Descubre el poder del combo de melatonina y magnesio bisglicinato para optimizar el sueño, relajar el sistema nervioso y acelerar la recuperación muscular.",
-  keywords: ["suplementos de recuperacion", "melatonina y magnesio", "sueño profundo", "recuperacion sistema nervioso", "bisglicinato de magnesio", "arquitectura del sueño"],
 };
 
 export default function RecuperacionPage() {

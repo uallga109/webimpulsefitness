@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Vitamina D3: Dosis Diaria, Hormona del Sol y Rendimiento Deportivo",
   description: "Aprende todo sobre la Vitamina D3 (Colecalciferol). Su papel clave como pro-hormona en la testosterona, fuerza muscular, absorción de calcio y salud ósea.",
-  keywords: ["vitamina d3 dosis", "vitamina d rendimiento deportivo", "absorcion de calcio", "salud osea", "vitamina d testosterona", "colecalciferol"],
 };
 
 export default function VitaminaD3Page() {

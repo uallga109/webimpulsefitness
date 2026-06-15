@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento con Bandas Elásticas: Resistencia Variable | Impulse Fitness",
   description: "Aprende a entrenar con bandas de resistencia en casa. Guía de biomecánica de polea casera, ley de Hooke, hipertrofia y cuidado articular.",
-  keywords: [
-    "entrenamiento bandas elasticas casa",
-    "ejercicios bandas de resistencia",
-    "remo con bandas elasticas",
-    "resistencia variable bandas ley hooke",
-    "bandas elasticas musculacion opiniones",
-    "ejercicios polea en casa bandas",
-    "gimnasio portatil bandas elasticas"
-  ],
 };
 
 export default function BandasElasticasPage() {

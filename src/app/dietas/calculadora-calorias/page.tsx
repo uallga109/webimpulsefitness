@@ -6,7 +6,6 @@ import CalcCaloriasClient from "@/components/dietas/CalcCaloriasClient";
 export const metadata: Metadata = {
   title: "Calculadora de Calorías Diarias y TDEE | Impulse Fitness",
   description: "Calcula con precisión tus calorías para déficit, mantenimiento o volumen. Descubre tu TDEE y metabolismo basal mediante ecuaciones científicas.",
-  keywords: ["calculadora de calorias", "calcular TDEE", "metabolismo basal", "gasto energetico total diario", "mifflin st jeor", "calorias diarias gratis", "deficit calorico calculadora"],
 };
 
 export default function CalculadoraCaloriasPage() {

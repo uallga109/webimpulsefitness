@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Ashwagandha KSM-66: Reducir Cortisol, Testosterona y Dosis",
   description: "Descubre cómo la Ashwagandha KSM-66 modula el estrés, disminuye el cortisol y favorece la testosterona. Guía de uso de este adaptógeno deportivo.",
-  keywords: ["ashwagandha ksm 66", "reducir cortisol estres", "adaptogeno testosterona", "recuperacion sistema nervioso", "ashwagandha dosis", "withanolidos"],
 };
 
 export default function AshwagandhaPage() {

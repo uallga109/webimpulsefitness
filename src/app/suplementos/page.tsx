@@ -6,18 +6,6 @@ export const metadata: Metadata = {
   title: "Suplementos Deportivos con Evidencia Científica | Guía de Nutrición de Élite",
   description:
     "Análisis clínico riguroso de suplementos con grado de evidencia A y B del Instituto Australiano del Deporte. Creatina, proteína de suero, cafeína, pre-entrenos y adaptógenos.",
-  keywords: [
-    "suplementacion deportiva",
-    "suplementos deportivos con evidencia cientifica",
-    "ayudas ergogenicas grado a",
-    "creatina monohidrato dosis",
-    "proteina whey aislado",
-    "cafeina anhidra rendimiento",
-    "citrulina malato pre entreno",
-    "omega 3 epa dha deportistas",
-    "suplementos hipertrofia fuerza",
-    "nutricion basada en evidencia",
-  ],
 };
 
 export default function SuplementosPage() {

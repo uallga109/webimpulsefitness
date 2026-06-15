@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento con Pesas Rusas (Kettlebells) | Impulse Fitness",
   description: "Potencia funcional y cardio extremo con Kettlebells. Domina el swing y construye una cadena posterior irrompible.",
-  keywords: [
-    "entrenamiento pesas rusas kettlebells",
-    "kettlebell swing tecnica bisagra",
-    "pesas rusas ejercicios en casa",
-    "peso de kettlebell para empezar",
-    "levantamiento turco kettlebell beneficios",
-    "cardio balistico kettlebells",
-    "cadena posterior fuerza kettlebell",
-  ],
 };
 
 export default function KettlebellsPage() {

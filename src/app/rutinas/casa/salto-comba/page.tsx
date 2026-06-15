@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Salto a la Comba: Cardio de Alta Intensidad | Impulse Fitness",
   description: "Aprende a saltar a la comba como un atleta. Guía biomecánica de pliometría de tobillo, quema calórica extrema y acondicionamiento en casa.",
-  keywords: [
-    "salto a la comba casa",
-    "beneficios saltar comba cardio",
-    "tecnica salto basico comba",
-    "saltar comba gemelos fuerza",
-    "comba velocidad entrenamiento",
-    "pliometria tobillo comba",
-    "quemar grasa saltar cuerda"
-  ],
 };
 
 export default function SaltoCombaPage() {

@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Citrulina Malato: Óxido Nítrico, Dosis Pre-Entreno y Congestión",
   description: "Descubre cómo la citrulina malato estimula el óxido nítrico, mejora la vasodilatación y aumenta la congestión muscular. Ciencia de la dosis y el aclaramiento de amoníaco.",
-  keywords: ["citrulina malato", "oxido nitrico pre entreno", "congestión muscular", "vasodilatador gimnasio", "citrulina dosis", "bombeo muscular"],
 };
 
 export default function CitrulinaPage() {

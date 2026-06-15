@@ -3,8 +3,7 @@ import {
   getAllSupplements,
   getAllDiets,
   getAllExercises,
-  getAllTools,
-  getAllGyms
+  getAllTools
 } from '@/lib/data'
 
 import { noticiasData } from '@/data/noticiasData'
@@ -117,12 +116,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   // 2. Rutas Dinámicas desde la "Base de Datos"
-  const [supplements, diets, exercises, tools, gyms] = await Promise.all([
+  const [supplements, diets, exercises, tools] = await Promise.all([
     getAllSupplements(),
     getAllDiets(),
     getAllExercises(),
-    getAllTools(),
-    getAllGyms()
+    getAllTools()
   ]);
 
   const supplementRoutes = supplements.map((item) => ({
@@ -155,14 +153,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
     }))
 
-  // CORREGIDO: Ruta correcta es /gimnasios/ en lugar de /gyms/
-  const gymRoutes = gyms.map((item) => ({
-    url: `${baseUrl}/gimnasios/${item.slug}`,
-    lastModified: item.lastModified,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
-
   const noticiasRoutes = noticiasData.map((item: { slug: string; fecha: string }) => ({
     url: `${baseUrl}/noticias/${item.slug}`,
     lastModified: parseSpanishDate(item.fecha),
@@ -176,7 +166,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...dietRoutes,
     ...exerciseRoutes,
     ...toolRoutes,
-    ...gymRoutes,
     ...noticiasRoutes,
   ]
 }

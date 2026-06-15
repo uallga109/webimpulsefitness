@@ -87,95 +87,82 @@ export default function HomePage() {
       </section>
 
       {/* SECCIÓN 2: CIUDADES POPULARES (Respuesta rotunda SÍ: Cuadrícula perfecta con contadores) */}
+      {/* SECCIÓN 2: PILARES DE TRANSFORMACIÓN B2B */}
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-gray-200 pb-4">
           <h2 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">
-            Mercados de Alta Competencia
+            Ecosistema de Soluciones B2B
           </h2>
           <p className="text-sm text-gray-500 mt-1 sm:mt-0">
-            Zonas urbanas clave donde implementamos estrategias de SEO Local
+            Estrategias y tecnología para rentabilizar tu negocio deportivo
           </p>
         </div>
 
-        {/* Estructura de la Card: Imagen arriba, información clara abajo */}
+        {/* Estructura de la Card B2B */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
-              city: "Madrid",
-              count: "+1.200 centros",
-              trainers: "Competencia Muy Alta",
-              hue: "from-blue-500/20 to-blue-600/40",
-              svgBg: "#2563EB",
+              title: "Captación Local",
+              desc: "Embudos de Facebook/Meta Ads y posicionamiento en Google Maps para llenar tu centro de leads calificados.",
+              focus: "Gimnasios",
+              href: "/gimnasios/marketing",
+              bgColor: "bg-blue-500/10",
+              textColor: "text-[#2563EB]",
+              icon: "📍",
             },
             {
-              city: "Barcelona",
-              count: "+900 centros",
-              trainers: "Competencia Muy Alta",
-              hue: "from-green-500/20 to-green-600/40",
-              svgBg: "#22C55E",
+              title: "Cobros & Onboarding",
+              desc: "Implementación de pasarelas Stripe y cobros recurrentes para automatizar la administración de tu coaching.",
+              focus: "Entrenadores",
+              href: "/entrenadores/marketing",
+              bgColor: "bg-green-500/10",
+              textColor: "text-[#22C55E]",
+              icon: "💳",
             },
             {
-              city: "Valencia",
-              count: "+400 centros",
-              trainers: "Competencia Alta",
-              hue: "from-amber-500/20 to-amber-600/40",
-              svgBg: "#F59E0B",
+              title: "ROI & Tarifas",
+              desc: "Calculadoras interactivas de tarifas ideales y retorno de inversión publicitaria para tus campañas.",
+              focus: "Finanzas B2B",
+              href: "/herramientas",
+              bgColor: "bg-amber-500/10",
+              textColor: "text-amber-600",
+              icon: "📊",
             },
             {
-              city: "Sevilla",
-              count: "+300 centros",
-              trainers: "Competencia Alta",
-              hue: "from-purple-500/20 to-purple-600/40",
-              svgBg: "#8B5CF6",
+              title: "Playbooks de Venta",
+              desc: "Plantillas de copywriting para anuncios de Instagram y guiones estructurados de videollamadas de alto ticket.",
+              focus: "Adquisición",
+              href: "/gimnasios/marketing/plantillas-copywriting",
+              bgColor: "bg-purple-500/10",
+              textColor: "text-purple-600",
+              icon: "📖",
             },
           ].map((item, idx) => (
             <Link
               key={idx}
-              href="/gimnasios/marketing/seo-local"
-              className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col block"
+              href={item.href}
+              className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col block p-6 justify-between"
             >
-              {/* Imagen arriba (Representación gráfica vectorial limpia para máxima fiabilidad y carga instantánea) */}
-              <div className="h-36 w-full bg-gray-50 relative overflow-hidden flex items-center justify-center border-b border-gray-100">
-                {/* Elementos geométricos representando el skyline o dinamismo de la ciudad */}
-                <div className="absolute inset-0 opacity-10 bg-grid-pattern" />
-                <div
-                  className="absolute bottom-0 w-full h-16 opacity-20"
-                  style={{ backgroundColor: item.svgBg }}
-                />
-                <div className="relative z-10 flex flex-col items-center">
-                  <span className="text-3xl">🏛️</span>
-                  <span className="text-xs font-bold text-gray-400 mt-1 uppercase tracking-widest">
-                    ESPAÑA
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-3xl">{item.icon}</span>
+                  <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider ${item.bgColor} ${item.textColor}`}>
+                    {item.focus}
                   </span>
                 </div>
-                {/* Overlay hover suave */}
-                <div className="absolute inset-0 bg-[#2563EB]/0 group-hover:bg-[#2563EB]/5 transition-colors" />
+                <h3 className="text-lg font-black text-[#111827] group-hover:text-[#2563EB] transition-colors leading-tight">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-500 leading-relaxed font-semibold">
+                  {item.desc}
+                </p>
               </div>
 
-              {/* Información clara abajo */}
-              <div className="p-5 flex-1 flex flex-col justify-between bg-white">
-                <div>
-                  <h3 className="text-xl font-black text-[#111827] group-hover:text-[#2563EB] transition-colors">
-                    {item.city}
-                  </h3>
-                  <div className="mt-2 space-y-1">
-                    <p className="text-base text-gray-600 font-medium flex items-center space-x-1.5">
-                      <span className="w-2 h-2 rounded-full bg-[#2563EB]" />
-                      <span>{item.count}</span>
-                    </p>
-                    <p className="text-sm text-gray-500 flex items-center space-x-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-                      <span>{item.trainers}</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-gray-400">Estrategia B2B</span>
-                  <span className="text-xs font-bold text-[#2563EB] group-hover:translate-x-1 transition-transform">
-                    Dominar mapa →
-                  </span>
-                </div>
+              <div className="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span className="text-xs font-semibold text-gray-400">Estrategia B2B</span>
+                <span className="text-xs font-bold text-[#2563EB] group-hover:translate-x-1 transition-transform">
+                  Ver detalles →
+                </span>
               </div>
             </Link>
           ))}

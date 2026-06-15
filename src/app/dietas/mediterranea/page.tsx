@@ -5,7 +5,6 @@ import DietDetailLayout from "@/components/dietas/DietDetailLayout";
 export const metadata: Metadata = {
   title: "Dieta Mediterránea Saludable: Qué es y Menú | Impulse Fitness",
   description: "Descubre el patrón alimenticio más saludable del mundo avalado por la ciencia. Alimentos estrella, guía de longevidad y menú de ejemplo diario.",
-  keywords: ["dieta mediterranea", "dieta mediterranea menu", "alimentacion saludable", "aceite de oliva virgen extra", "longevidad", "salud cardiovascular"],
 };
 
 export default function MediterraneaPage() {

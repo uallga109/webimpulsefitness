@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento Isométrico: Fuerza Científica sin Impacto | Impulse Fitness",
   description: "Descubre el entrenamiento isométrico en casa. Maximiza el reclutamiento de unidades motoras y la salud de tus tendones con tensión estática profunda.",
-  keywords: [
-    "entrenamiento isometrico casa",
-    "ejercicios isometricos beneficios",
-    "wall sit tecnica sentadilla",
-    "tension estatica muscular",
-    "isometricos tendinitis rotuliana",
-    "fuerza sin impacto articular",
-    "reclutamiento unidades motoras"
-  ],
 };
 
 export default function IsometricoPage() {

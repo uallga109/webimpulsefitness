@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Omega 3 (EPA y DHA): Beneficios, Dosis Óptima y Antiinflamatorio",
   description: "Aprende cómo el Omega 3 (EPA y DHA) reduce la inflamación articular, mejora la salud cardiovascular y optimiza la síntesis de proteínas. Guía de dosis y calidad.",
-  keywords: ["omega 3 suplemento", "beneficios omega 3", "epa y dha dosis", "antiinflamatorio muscular", "salud cardiovascular", "acidos grasos"],
 };
 
 export default function Omega3Page() {

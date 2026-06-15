@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Deportes de Fuerza y Disciplinas Fitness | Impulse Fitness",
@@ -35,36 +36,42 @@ export default function DeportesPage() {
             focus: "Fuerza Máxima (1RM)",
             focusClass: "bg-blue-50 text-[#2563EB]",
             desc: "Deporte centrado en levantar el máximo peso posible en tres movimientos estrictos: Sentadilla, Press de Banca y Peso Muerto.",
+            href: "/rutinas/gimnasio",
           },
           {
             name: "Halterofilia",
             focus: "Potencia & Explosividad",
             focusClass: "bg-purple-50 text-purple-600",
             desc: "Deporte olímpico que exige una técnica depurada y velocidad suprema para ejecutar la Arrancada (Snatch) y el Dos Tiempos (Clean & Jerk).",
+            href: "/rutinas/gimnasio",
           },
           {
             name: "CrossFit",
             focus: "Acondicionamiento Mixto",
             focusClass: "bg-amber-50 text-amber-600",
             desc: "Movimientos funcionales constantemente variados ejecutados a alta intensidad. Engloba gimnasia, levantamientos y resistencia cardiovascular.",
+            href: "/rutinas/casa/hiit-casa",
           },
           {
             name: "Culturismo Natural",
             focus: "Estética & Simetría",
             focusClass: "bg-green-50 text-[#22C55E]",
             desc: "Búsqueda del máximo desarrollo muscular y bajo porcentaje graso de forma estrictamente libre de sustancias dopantes bajo controles antidopaje.",
+            href: "/dietas/volumen-limpio",
           },
           {
             name: "Calistenia & Street Workout",
             focus: "Control Corporal",
             focusClass: "bg-red-50 text-red-600",
             desc: "Dominio de la gravedad utilizando el propio peso en barras estáticas y anillas. Destacan elementos estáticos como el Front Lever o la Planche.",
+            href: "/rutinas/casa/peso-corporal",
           },
           {
             name: "Strongman",
             focus: "Fuerza Bruta & Movilidad",
             focusClass: "bg-gray-50 text-[#111827]",
             desc: "Pruebas extremas no estandarizadas que implican arrastrar camiones, cargar piedras del Atlas, y realizar paseos del granjero con pesos máximos.",
+            href: "/rutinas/gimnasio",
           },
         ].map((sport, idx) => (
           <article
@@ -82,9 +89,9 @@ export default function DeportesPage() {
 
             {/* Color primario: Azul eléctrico moderado (#2563EB) */}
             <div className="mt-6 pt-4 border-t border-gray-100 text-right">
-              <button className="text-xs font-bold text-[#2563EB] hover:underline">
+              <Link href={sport.href} className="text-xs font-bold text-[#2563EB] hover:underline">
                 Ver manual técnico →
-              </button>
+              </Link>
             </div>
           </article>
         ))}
@@ -92,3 +99,4 @@ export default function DeportesPage() {
     </div>
   );
 }
+

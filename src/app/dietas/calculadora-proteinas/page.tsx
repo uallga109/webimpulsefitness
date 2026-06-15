@@ -6,7 +6,6 @@ import CalcProteinasClient from "@/components/dietas/CalcProteinasClient";
 export const metadata: Metadata = {
   title: "Calculadora de Proteínas Diarias Online | Impulse Fitness",
   description: "Descubre cuánta proteína necesitas consumir al día para optimizar la masa muscular y el rendimiento deportivo basándote en la ciencia.",
-  keywords: ["calculadora de proteinas", "cuanta proteina necesito", "calcular gramos proteina", "proteina por kilo", "sintesis proteica", "batidos de proteina", "mTOR"],
 };
 
 export default function CalculadoraProteinasPage() {

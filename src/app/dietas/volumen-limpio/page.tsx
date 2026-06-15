@@ -5,7 +5,6 @@ import DietDetailLayout from "@/components/dietas/DietDetailLayout";
 export const metadata: Metadata = {
   title: "Dieta de Volumen Limpio (Clean Bulking) | Impulse Fitness",
   description: "Maximiza tu ganancia de masa muscular de forma predecible controlando el superávit calórico. Alimentos clave, guía científica y menú de ejemplo diario.",
-  keywords: ["volumen limpio", "clean bulking", "dieta ganar musculo", "superavit calorico", "dieta volumen muscular", "hipertrofia"],
 };
 
 export default function VolumenLimpioPage() {

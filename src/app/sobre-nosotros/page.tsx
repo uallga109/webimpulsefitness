@@ -5,7 +5,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre Nosotros",
   description: "Descubre la ciencia, el rigor empírico y la estrategia de negocio que definen el ecosistema premium de Impulse Fitness.",
-  keywords: ["sobre nosotros", "impulse fitness team", "evidence based fitness", "eeat fitness", "marketing fitness"],
 };
 
 export default function SobreNosotros() {

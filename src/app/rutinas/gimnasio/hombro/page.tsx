@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Hombro: Consigue Hombros 3D con Base Científica",
   description: "Aprende los mejores ejercicios de hombro en gimnasio. Guía avanzada de técnica para deltoides anterior, lateral y posterior.",
-  keywords: ["ejercicios de hombro", "deltoides lateral amplitud", "press militar tecnica", "hombros 3D", "entrenamiento deltoides", "hombros gimnasio"],
 };
 
 export default function HombroPage() {

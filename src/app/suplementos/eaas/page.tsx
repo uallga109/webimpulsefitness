@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Aminoácidos Esenciales (EAAs): Beneficios, BCAAs vs EAAs y Dosis",
   description: "Descubre por qué los aminoácidos esenciales (EAAs) son superiores a los BCAAs para la síntesis proteica. Guía sobre dosis, intra-entreno y recuperación muscular.",
-  keywords: ["aminoacidos esenciales", "eaas suplemento", "bcaas vs eaas", "recuperacion muscular", "aminoacidos para entrenar", "sintesis de proteinas", "mTOR"],
 };
 
 export default function EAAsPage() {

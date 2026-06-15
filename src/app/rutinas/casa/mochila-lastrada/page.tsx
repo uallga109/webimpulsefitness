@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento con Mochila Lastrada: Sobrecarga Progresiva | Impulse Fitness",
   description: "Descubre cómo utilizar una mochila lastrada para aplicar sobrecarga progresiva real en casa. Guía biomecánica de calistenia con lastre casero.",
-  keywords: [
-    "entrenamiento mochila lastrada",
-    "calistenia lastrada casa",
-    "sobrecarga progresiva casera",
-    "ejercicios flexiones lastradas",
-    "sentadillas con mochila peso",
-    "como lastrar ejercicios en casa",
-    "mochila peso entrenamiento"
-  ],
 };
 
 export default function MochilaLastradaPage() {

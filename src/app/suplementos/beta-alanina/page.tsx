@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Beta-Alanina: Carnosina Muscular, Parestesia y Resistencia",
   description: "Descubre cómo la beta-alanina retrasa la fatiga y neutraliza el ácido láctico en los músculos. Toda la ciencia sobre carnosina, dosis y el picor de la parestesia.",
-  keywords: ["beta alanina", "retrasar fatiga muscular", "carnosina muscular", "parestesia beta alanina", "resistencia gimnasio", "tampon lactico"],
 };
 
 export default function BetaAlaninaPage() {

@@ -5,7 +5,6 @@ import DietDetailLayout from "@/components/dietas/DietDetailLayout";
 export const metadata: Metadata = {
   title: "Dieta de Definición Estricta (Cutting) | Impulse Fitness",
   description: "Consigue una definición muscular máxima manteniendo tu masa magra. Guía científica completa de definición con pautas alimentarias y menú diario.",
-  keywords: ["dieta de definicion", "cutting", "perder grasa sin perder musculo", "dieta definir", "deficit calorico estricto", "definicion muscular"],
 };
 
 export default function DefinicionPage() {

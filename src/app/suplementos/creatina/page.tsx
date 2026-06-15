@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Creatina Monohidrato: Cómo Tomar, Dosis y Guía Biomecánica",
   description: "Aprende todo sobre la creatina monohidrato, el suplemento con mayor respaldo científico. Descubre sus beneficios en fuerza, dosis óptima y mitos desmentidos.",
-  keywords: ["creatina monohidrato", "como tomar creatina", "beneficios creatina", "fase de carga creatina", "creatina y riñones", "hipertrofia creatina"],
 };
 
 export default function CreatinaPage() {

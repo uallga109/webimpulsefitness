@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Core y Abdomen: Fuerza y Definición Abdominal",
   description: "Aprende los mejores ejercicios de core en gimnasio. Guía avanzada de biomecánica para marcar abdominales, estabilidad profunda y oblicuos.",
-  keywords: ["ejercicios de core", "marcar abdominales gimnasio", "estabilidad de core", "rueda abdominal tecnica", "plancha abdominal", "oblicuos"],
 };
 
 export default function CorePage() {

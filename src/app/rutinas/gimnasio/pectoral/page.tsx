@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Pectoral: Guía Biomecánica y Entrenamiento de Pecho",
   description: "Aprende los mejores ejercicios de pectoral en gimnasio. Guía científica de biomecánica para hipertrofia del pectoral superior, medio e inferior.",
-  keywords: ["ejercicios de pectoral", "entrenamiento pecho gimnasio", "press banca tecnica", "como desarrollar el pectoral", "hipertrofia pectoral", "pecho superior", "pecho inferior"],
 };
 
 export default function PectoralPage() {

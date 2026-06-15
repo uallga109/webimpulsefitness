@@ -6,17 +6,6 @@ export const metadata: Metadata = {
   title: "Rutinas de Entrenamiento y Planes de Fuerza | Impulse Fitness",
   description:
     "Descubre rutinas estructuradas basadas en biomecánica para hipertrofia y fuerza. Acceso a guías de gimnasio, calistenia en casa y generador inteligente.",
-  keywords: [
-    "rutinas de entrenamiento gimnasio",
-    "planes de fuerza sobrecarga progresiva",
-    "generador de rutinas automatico",
-    "ejercicios de gimnasio biomecanica",
-    "entrenamiento calistenia en casa",
-    "tension mecanica hipertrofia",
-    "frecuencia de entrenamiento semanal",
-    "repeticiones en recamara rir",
-    "rutina push pull legs españa",
-  ],
 };
 
 export default function RutinasPage() {
@@ -161,7 +150,7 @@ export default function RutinasPage() {
         </article>
       </section>
 
-      {/* 🔬 NUEVAS SECCIONES INNOVADORAS INYECTADAS DE ALTÍSIMA DENSIDAD DE PALABRAS CLAVE (SEO al 200%) */}
+      
       <section className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl space-y-8 relative overflow-hidden">
         {/* Decorativo de fondo */}
         <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />

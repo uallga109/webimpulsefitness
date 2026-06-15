@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Mancuernas Ajustables: Hipertrofia y Fuerza en Casa | Impulse Fitness",
   description: "Aprende a entrenar con mancuernas ajustables en casa. Guía de biomecánica de la tensión mecánica, sobrecarga progresiva real y floor press de pecho.",
-  keywords: [
-    "mancuernas ajustables casa",
-    "pesas ajustables opiniones",
-    "floor press mancuernas pecho",
-    "sobrecarga progresiva hipertrofia",
-    "mancuernas bowflex selectorizadas",
-    "ejercicios mancuernas cuerpo completo",
-    "ahorrar espacio gimnasio casa"
-  ],
 };
 
 export default function MancuernasAjustablesPage() {

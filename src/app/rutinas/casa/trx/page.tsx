@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Entrenamiento en Suspensión (TRX): Guía en Casa | Impulse Fitness",
   description: "Aprende a dominar el TRX en casa. Tensión estabilizadora, remo invertido y cómo ajustar la intensidad con tu peso corporal.",
-  keywords: [
-    "entrenamiento suspension trx casa",
-    "ejercicios trx principiantes",
-    "remo trx biomecanica",
-    "rutina trx cuerpo completo",
-    "trx anclaje puerta opiniones",
-    "calistenia suspension trx",
-    "core estabilidad trx ejercicios",
-  ],
 };
 
 export default function TRXPage() {

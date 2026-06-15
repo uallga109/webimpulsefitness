@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Barra de Dominadas en Casa: Espalda en V | Impulse Fitness",
   description: "Construye una espalda ancha y fuerte desde casa. Guía de dominadas estrictas, técnica y beneficios para la salud espinal.",
-  keywords: [
-    "barra de dominadas casa puerta",
-    "dominadas estrictas tecnica prono",
-    "ejercicios espalda en casa sin pesas",
-    "como hacer tu primera dominada",
-    "dominadas asistidas con banda elastica",
-    "fuerza de agarre barra de dominadas",
-    "dorsal ancho calistenia casa",
-  ],
 };
 
 export default function BarraDominadasPage() {

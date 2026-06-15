@@ -37,6 +37,7 @@ export default function EventosPage() {
             tag: "Feria & Multideporte",
             tagClass: "bg-blue-50 text-[#2563EB]",
             desc: "La mayor convención europea de culturismo, deportes de fuerza y exhibición de las marcas líderes del sector.",
+            href: "https://arnoldsportsfestival-europe.com/",
           },
           {
             title: "Campeonato de España AEP",
@@ -45,6 +46,7 @@ export default function EventosPage() {
             tag: "Powerlifting Oficial",
             tagClass: "bg-purple-50 text-purple-600",
             desc: "Competición nacional de sentadilla, press banca y peso muerto bajo reglamento estricto e inspección antidopaje.",
+            href: "https://www.powerliftingaep.com/",
           },
           {
             title: "WNBF Spain Nationals",
@@ -53,6 +55,7 @@ export default function EventosPage() {
             tag: "Culturismo Natural",
             tagClass: "bg-green-50 text-[#22C55E]",
             desc: "El certamen de culturismo con mayor prestigio libre de sustancias con polígrafo obligatorio y control WADA.",
+            href: "https://www.wnbfspain.es/",
           },
           {
             title: "Madrid CrossFit Championship",
@@ -61,6 +64,7 @@ export default function EventosPage() {
             tag: "CrossFit Licensed",
             tagClass: "bg-amber-50 text-amber-600",
             desc: "Atletas de élite internacionales compitiendo durante 3 días consecutivos en pruebas extremas de capacidad aeróbica y fuerza.",
+            href: "https://madridcrossfitchampionship.com/",
           },
           {
             title: "FIBO Global Fitness",
@@ -69,6 +73,7 @@ export default function EventosPage() {
             tag: "Feria Internacional",
             tagClass: "bg-gray-50 text-[#111827]",
             desc: "El punto de encuentro B2B mundial para propietarios de gimnasios, innovaciones tecnológicas y equipamiento.",
+            href: "https://www.fibo.com/",
           },
           {
             title: "Hyrox Spain Tour",
@@ -77,6 +82,7 @@ export default function EventosPage() {
             tag: "Fitness Racing",
             tagClass: "bg-red-50 text-red-600",
             desc: "La carrera de fitness masiva que combina 8 kilómetros de running intercalados con 8 estaciones funcionales pesadas.",
+            href: "https://hyroxspain.com/",
           },
         ].map((ev, idx) => (
           <article
@@ -102,9 +108,14 @@ export default function EventosPage() {
               <span className="text-xs font-bold text-[#2563EB] bg-blue-50/50 px-2 py-1 rounded">
                 📅 {ev.date}
               </span>
-              <button className="text-xs font-bold text-[#2563EB] hover:underline">
+              <a
+                href={ev.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold text-[#2563EB] hover:underline"
+              >
                 Inscripciones →
-              </button>
+              </a>
             </div>
           </article>
         ))}

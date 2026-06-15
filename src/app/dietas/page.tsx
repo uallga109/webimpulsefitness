@@ -6,18 +6,6 @@ export const metadata: Metadata = {
   title: "Dietas Deportivas y Planificación Nutricional de Precisión | Impulse Fitness",
   description:
     "Aprende a planificar tu nutrición y ajustar tus calorías al gramo. Calculadoras de gasto energético (TDEE), proteínas y guías de dietas hipertróficas y de definición.",
-  keywords: [
-    "nutricion deportiva precision",
-    "dietas ganar masa muscular limpia",
-    "dieta de definicion estricta",
-    "calculadora calorias deficit",
-    "calculadora proteinas hipertrofia",
-    "recomposicion corporal macronutrientes",
-    "dieta cetogenica keto menu",
-    "ayuno intermitente beneficios",
-    "sintesis proteica muscular",
-    "nutricion basada en evidencia",
-  ],
 };
 
 export default function DietasPage() {
@@ -244,7 +232,7 @@ export default function DietasPage() {
         </div>
       </section>
 
-      {/* 🔬 NUEVAS SECCIONES INNOVADORAS INYECTADAS DE ALTÍSIMA DENSIDAD DE PALABRAS CLAVE (SEO al 200%) */}
+      
       <section className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl space-y-8 relative overflow-hidden">
         {/* Decorativo de fondo */}
         <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-green-500/5 rounded-full blur-[100px] pointer-events-none" />

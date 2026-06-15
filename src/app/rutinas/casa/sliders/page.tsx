@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Discos Deslizadores (Sliders): Core de Acero y Fricción | Impulse Fitness",
   description: "Maximiza la tensión mecánica en abdominales, oblicuos e isquiotibiales con discos deslizadores (sliders). Guía científica de entrenamiento excéntrico en casa.",
-  keywords: [
-    "discos deslizadores ejercicios casa",
-    "sliders core abdominales",
-    "curl femoral sliders biomecanica",
-    "entrenamiento inestabilidad sliders",
-    "ejercicios deslizantes isquiotibiales",
-    "core slide entrenamiento funcional",
-    "fuerza abdominal sin impacto"
-  ],
 };
 
 export default function SlidersPage() {

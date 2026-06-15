@@ -6,17 +6,6 @@ export const metadata: Metadata = {
   title: "Gymshark | Ropa Técnica Seamless y Athleisure de Élite",
   description:
     "Descubre la historia, tecnología seamless y catálogo oficial de Gymshark en España. Camisetas de compresión, mallas Vital Seamless y diseño estético ergonómico.",
-  keywords: [
-    "gymshark españa",
-    "tecnologia seamless gymshark",
-    "mallas vital seamless mujer",
-    "comprar ropa gymshark oficial",
-    "camisetas de compresion gimnasio",
-    "sombreado jacquard gymshark",
-    "ben francis historia gymshark",
-    "ropa de gimnasio estetica ajustada",
-    "athleisure premium gymshark madrid",
-  ],
 };
 
 export default function GymsharkPage() {

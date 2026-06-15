@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Espalda: Guía Biomecánica para Dorsal y Densidad",
   description: "Aprende los mejores ejercicios de espalda en gimnasio. Consigue amplitud de dorsal ancho y densidad con técnicas biomecánicas avanzadas.",
-  keywords: ["ejercicios de espalda", "entrenamiento dorsal ancho", "densidad espalda", "remo con barra tecnica", "dominadas pronas", "hipertrofia espalda"],
 };
 
 export default function EspaldaPage() {

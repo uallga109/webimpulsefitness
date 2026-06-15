@@ -6,16 +6,6 @@ export const metadata: Metadata = {
   title: "HSN Labs | Suplementación Directa de Fábrica y Calidad Certificada",
   description:
     "Descubre HSN Labs en España. La marca líder en suplementación deportiva directo de fábrica al consumidor. Analizamos sus materias primas, sello IFS Food y gamas.",
-  keywords: [
-    "hsn labs españa",
-    "comprar proteinas hsn evowhey",
-    "hsn materia prima creapure",
-    "hsn lacprodan cfm arla",
-    "certificacion ifs food hsn albolote",
-    "suplementos directo de fabrica d2c",
-    "sportseries rawseries essentialseries",
-    "pureza analisis externos eurofins hsn",
-  ],
 };
 
 export default function HsnPage() {

@@ -5,7 +5,6 @@ import SupplementDetailLayout from "@/components/suplementos/SupplementDetailLay
 export const metadata: Metadata = {
   title: "Proteína Whey: Tipos (Aislado, Concentrado), Dosis y Síntesis Proteica",
   description: "Aprende todo sobre la proteína de suero de leche (Whey). Guía científica sobre absorción, umbral de leucina, diferencias entre aislado y concentrado, y mitos.",
-  keywords: ["proteina whey", "suero de leche gimnasio", "batido proteina despues de entrenar", "aislado de suero", "hipertrofia proteina", "concentrado de suero", "sintesis proteica"],
 };
 
 export default function WheyPage() {

@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Pilates de Suelo (Mat Pilates): Fuerza Interna y Postura | Impulse Fitness",
   description: "Descubre el Mat Pilates en casa. Mejora la estabilidad lumbopélvica, el transverso abdominal, el suelo pélvico y la alineación de tu columna de forma científica.",
-  keywords: [
-    "pilates de suelo en casa",
-    "mat pilates ejercicios core",
-    "estabilidad lumbopelvica pilates",
-    "ejercicios suelo pelvico casa",
-    "el cien pilates tecnica",
-    "pilates dolor lumbar",
-    "control postural y respiracion"
-  ],
 };
 
 export default function PilatesSueloPage() {

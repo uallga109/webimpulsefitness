@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Brazos: Rutina Científica de Bíceps y Tríceps",
   description: "Aprende los mejores ejercicios de brazos en gimnasio. Optimiza tu curl de bíceps y extensiones de tríceps con bases biomecánicas.",
-  keywords: ["ejercicios de brazos", "curl de biceps tecnica", "como definir triceps", "hipertrofia de brazos", "biceps gimnasio", "triceps polea"],
 };
 
 export default function BrazosPage() {

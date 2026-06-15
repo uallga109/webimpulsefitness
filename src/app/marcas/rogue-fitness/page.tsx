@@ -6,16 +6,6 @@ export const metadata: Metadata = {
   title: "Rogue Fitness | Acero Industrial y Equipamiento de Fuerza",
   description:
     "Descubre Rogue Fitness en España. La marca líder en CrossFit, Powerlifting y Strongman. Analizamos su gama de racks Monster, la mítica barra Ohio Bar y su Cerakote.",
-  keywords: [
-    "rogue fitness españa",
-    "comprar rack rogue monster",
-    "racks modulares potencia crossfit",
-    "barra ohio bar cerakote rogue",
-    "discos bumpers rogue competition",
-    "strongman piedras de atlas rogue",
-    "comprar material de fuerza americano",
-    "equipamiento oficial crossfit games",
-  ],
 };
 
 export default function RoguePage() {

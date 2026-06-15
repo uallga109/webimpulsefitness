@@ -4,7 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import GlobalSearchBar from "@/components/layout/GlobalSearchBar";
 import Footer from "@/components/layout/Footer";
-import Script from "next/script";
+
 
 // Fuente principal y única: Inter
 const inter = Inter({
@@ -20,16 +20,6 @@ export const metadata: Metadata = {
   },
   description:
     "Plataforma premium de marketing digital para gimnasios y entrenadores, con herramientas de biomecánica, nutrición y rendimiento basadas en evidencia científica.",
-  keywords: [
-    "fitness B2B",
-    "marketing para gimnasios",
-    "marketing entrenadores",
-    "rutinas casa",
-    "suplementos deportivos",
-    "calculadora calorías",
-    "nutrición",
-    "impulse fitness",
-  ],
   authors: [{ name: "Impulse Fitness Team" }],
   openGraph: {
     title: "Impulse Fitness | Premium B2B & Science-Based Wellness",
@@ -78,19 +68,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
 
-        {/* Google Analytics 4 (GA4) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
-          `}
-        </Script>
+
 
         {/* 🛡️ BLOQUE LEGAL: CMP (Consent Management Platform) */}
       </head>

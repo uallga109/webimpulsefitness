@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Fitball (Pelota Suiza): Inestabilidad y Core | Impulse Fitness",
   description: "Entrena con Fitball en casa. Mejora la estabilidad lumbopélvica, propiocepción, dolor lumbar y fortalecimiento del core profundo con pelota suiza.",
-  keywords: [
-    "fitball ejercicios casa",
-    "pelota suiza core entrenamiento",
-    "stir the pot fitball tecnica",
-    "estabilidad pélvica fitball",
-    "fitball dolor de espalda",
-    "ejercicios propiocepcion fitball",
-    "silla ergonómica fitball"
-  ],
 };
 
 export default function FitballPage() {

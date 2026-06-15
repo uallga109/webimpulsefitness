@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Miniparalelas (Parallettes): Calistenia y Empuje Avanzado | Impulse Fitness",
   description: "Protege tus muñecas y aumenta el rango de movimiento con miniparalelas. Guía biomecánica para dominar L-sit, fondos y progresiones de calistenia.",
-  keywords: [
-    "miniparalelas calistenia casa",
-    "ejercicios con parallettes",
-    "como hacer l-sit principiantes",
-    "flexiones profundas parallettes",
-    "calistenia empuje avanzado",
-    "proteger muñecas calistenia",
-    "paralelas de madera gimnasio"
-  ],
 };
 
 export default function MiniparalelasPage() {

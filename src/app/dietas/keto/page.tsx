@@ -5,7 +5,6 @@ import DietDetailLayout from "@/components/dietas/DietDetailLayout";
 export const metadata: Metadata = {
   title: "Dieta Cetogénica (Keto) Completa | Impulse Fitness",
   description: "Entra en cetosis y quema grasa de forma altamente eficiente. Guía científica de la dieta keto con menú de ejemplo, alimentos estrella y pautas esenciales.",
-  keywords: ["dieta cetogenica", "dieta keto", "entrar en cetosis", "menu keto gratis", "cuerpos cetonicos", "keto gripe"],
 };
 
 export default function KetoPage() {

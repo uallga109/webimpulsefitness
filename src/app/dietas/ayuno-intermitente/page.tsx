@@ -5,7 +5,6 @@ import DietDetailLayout from "@/components/dietas/DietDetailLayout";
 export const metadata: Metadata = {
   title: "Ayuno Intermitente (Protocolo 16/8) | Impulse Fitness",
   description: "Aprende a realizar el protocolo de ayuno intermitente 16/8 con base científica. Guía completa con menú de ejemplo diario, alimentos permitidos y FAQs.",
-  keywords: ["ayuno intermitente", "ayuno 16/8", "autofagia", "ayunar perder grasa", "ventana de alimentacion", "ayuno intermitente menu"],
 };
 
 export default function AyunoPage() {

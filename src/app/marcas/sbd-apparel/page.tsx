@@ -6,17 +6,6 @@ export const metadata: Metadata = {
   title: "SBD Apparel | Rodilleras y Cinturones de Powerlifting Oficiales IPF",
   description:
     "Descubre el equipamiento oficial de SBD Apparel en España. Rodilleras de neopreno de 7 mm, cinturón de palanca patentado de 13 mm y material homologado IPF.",
-  keywords: [
-    "sbd apparel españa",
-    "rodilleras sbd 7mm powerlifting",
-    "cinturon sbd palanca ajustable",
-    "sbd knee sleeves original",
-    "comprar rodilleras sbd oficiales ipf",
-    "muñequeras sbd stiff rigidas",
-    "cinturon de cuero 13mm sbd",
-    "sbd eclipse y defy edicion limitada",
-    "material homologado ipf powerlifting",
-  ],
 };
 
 export default function SBDApparelPage() {

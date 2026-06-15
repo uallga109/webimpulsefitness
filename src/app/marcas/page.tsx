@@ -6,16 +6,6 @@ export const metadata: Metadata = {
   title: "Marcas Fitness y Equipamiento de Fuerza de Élite | Impulse Fitness",
   description:
     "Directorio de los mejores fabricantes de equipamiento pesado, biomecánica cardiovascular, suplementos deportivos certificados y accesorios de gimnasio.",
-  keywords: [
-    "marcas fitness elite",
-    "fabricantes barras halterofilia iwf ipf",
-    "suplementos materia prima patentada",
-    "maquinaria biomecanica technogym",
-    "accesorios powerlifting sbd",
-    "ropa seamless gymshark precio",
-    "barras olimpicas eleiko comprar",
-    "hsnsports sellos de calidad",
-  ],
 };
 
 export default function MarcasPage() {
@@ -174,7 +164,7 @@ export default function MarcasPage() {
         </div>
       </section>
 
-      {/* 🔬 NUEVAS SECCIONES INNOVADORAS INYECTADAS DE ALTÍSIMA DENSIDAD DE PALABRAS CLAVE (SEO al 200%) */}
+      
       <section className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl space-y-8 relative overflow-hidden">
         {/* Decorativo de fondo */}
         <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />

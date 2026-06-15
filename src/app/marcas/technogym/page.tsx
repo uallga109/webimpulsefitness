@@ -6,16 +6,6 @@ export const metadata: Metadata = {
   title: "Technogym | Biomecánica y Maquinaria de Fitness de Lujo",
   description:
     "Descubre Technogym en España. El líder indiscutible en wellness de lujo y biomecánica deportiva. Analizamos sus líneas Personal y Skill y el ecosistema Mywellness.",
-  keywords: [
-    "technogym españa",
-    "maquinaria technogym fitness de lujo",
-    "cintas de correr technogym personal",
-    "technogym skillmill precio",
-    "ecosistema mywellness technogym live",
-    "nerio alessandri cesena italia",
-    "biocircuit technogym rehabilitacion",
-    "comprar maquinas de gimnasio premium",
-  ],
 };
 
 export default function TechnogymPage() {

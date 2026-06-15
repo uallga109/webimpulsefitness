@@ -5,7 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Ejercicios de Pierna: Guía Biomecánica y Rutina de Tren Inferior",
   description: "Aprende los mejores ejercicios de pierna en gimnasio. Domina la sentadilla libre, el peso muerto rumano y el desarrollo de cuádriceps e isquios.",
-  keywords: ["ejercicios de pierna", "sentadilla libre tecnica", "peso muerto rumano isquios", "hipertrofia tren inferior", "rutina de piernas", "cuadriceps", "isquiotibiales", "gluteo mayor"],
 };
 
 export default function PiernaPage() {

@@ -5,15 +5,6 @@ import ExerciseDetailLayout from "@/components/rutinas/ExerciseDetailLayout";
 export const metadata: Metadata = {
   title: "Cardio HIIT Sin Impacto: Quema Grasa en Casa | Impulse Fitness",
   description: "Entrenamiento metabólico silencioso. Quema calorías sin saltos ni ruidos. Ideal para entrenar en pisos y proteger articulaciones.",
-  keywords: [
-    "cardio hiit sin impacto casa",
-    "ejercicios quemagrasas silenciosos",
-    "hiit para pisos vecinos",
-    "entrenamiento metabolico efecto epoc",
-    "cardio sin saltar articulaciones",
-    "rutina tabata casa sin material",
-    "hiit 20 minutos quema grasa",
-  ],
 };
 
 export default function HIITCasaPage() {
